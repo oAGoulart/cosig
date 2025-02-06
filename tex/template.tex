@@ -1,0 +1,82 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\begin{comment}
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=3cm,yshift=1cm] current page.south west)
+            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
+     \end{tikzpicture}}
+ }
+\end{comment}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Example title}
+\textit{Last updated: X Month 20XX}
+
+This is a template for new guides to be added to COSIG.
+
+\subsection*{Example section heading}
+
+\begin{figure}[h!tbp]
+    \includegraphics[width=\textwidth]{img/home/chinese_giant_salamander.jpg}
+    \caption*{Example of a figure. Image available \href{https://commons.wikimedia.org/wiki/File:Velemlok_\%C4\%8D\%C3\%ADnsk\%C3\%BD_zoo_praha_1.jpg}{here}.}
+\end{figure}
+
+% \setlength\itemsep{-0.5em}
+% for bullet points and numbered lists.
+
+\end{document}
