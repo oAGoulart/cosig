@@ -6,4 +6,4 @@
 
 However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This project is a collection of guides written by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 7 guides and was last updated on 7 February 2025.
+COSIG currently hosts 8 guides and was last updated on 7 February 2025.
