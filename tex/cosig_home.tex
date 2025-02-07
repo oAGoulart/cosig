@@ -1,0 +1,117 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{pdfpages}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\begin{comment}
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=3cm,yshift=1cm] current page.south west)
+            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
+     \end{tikzpicture}}
+ }
+\end{comment}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+
+
+\begin{document}
+\flushleft
+\includegraphics[width=\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Anyone can do post-publication peer review.}
+\section*{Anyone can do forensic metascience.}
+\section*{Anyone can sleuth.}
+
+However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This project is a collection of guides written by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
+
+COSIG currently hosts 8 guides and was last updated on 7 February 2025.
+
+Except where otherwise indicated, all material in COSIG is available under a \href{view-source:https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en}{CC BY-NC-SA 4.0 license}. That means that you are free to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as COSIG is properly cited. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
+
+\includegraphics[width=0.2\textwidth]{img/home/Cc-by-nc-sa_icon.svg.png}
+
+\pagebreak
+
+\section*{Table of contents}
+
+\subsection*{General guides}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item PubPeer commenting - best practices
+    \item Extracting vector graphics from a PDF
+    \item The vertical line test
+    \item Software for image forensics
+\end{itemize}
+
+\subsection*{Biology and medicine}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Misidentified and non-verifiable cell lines
+\end{itemize}
+
+\subsection*{Materials science and engineering}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Energy-dispersive X-ray spectroscopy
+    \item X-ray diffraction patterns - Scherrer's equation
+\end{itemize}
+
+\subsection*{Mathematics and statistics}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Standard deviation versus standard error
+\end{itemize}
+
+\end{document}
