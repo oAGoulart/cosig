@@ -1,5 +1,5 @@
 \documentclass[letterpaper, 12pt]{article}
-\usepackage{pdfpages}
+\usepackage{standalone}
 
 \usepackage{geometry}
  \geometry{
@@ -39,7 +39,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\pagenumbering{gobble}
+\pagenumbering{arabic}
 \usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
 
 \begin{comment}
@@ -61,17 +61,23 @@
 \renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
 \renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
 
-
 \begin{document}
 
-\includepdf[pages=-]{pdfs/cosig_home.pdf}\label{g:cosig_home}
-\includepdf[pages=-]{pdfs/cell_lines.pdf}\label{g:cell_lines}
-\includepdf[pages=-]{pdfs/edx.pdf}\label{g:edx}
-\includepdf[pages=-]{pdfs/pubpeer_best_practices.pdf}\label{pubpeer_best_practices}
-\includepdf[pages=-]{pdfs/sd_vs_se.pdf}\label{g:sd_vs_se}
-\includepdf[pages=-]{pdfs/software_image_forensics.pdf}\label{g:software_image_forensics}
-\includepdf[pages=-]{pdfs/vector_graphics.pdf}\label{g:vector_graphics}
-\includepdf[pages=-]{pdfs/vertical_line.pdf}\label{g:vertical_line}
-\includepdf[pages=-]{pdfs/xrd_scherrer.pdf}\label{xrd_scherrer}
+\include{tex/cosig_home}
+
+\tableofcontents
+
+\makeatletter
+\addtocontents{toc}{\let\Hy@linktoc\Hy@linktoc@none}
+\makeatother
+
+\include{tex/cell_lines}
+\include{tex/edx}
+\include{tex/pubpeer_best_practices}
+\include{tex/sd_vs_se}
+\include{tex/software_image_forensics}
+\include{tex/vector_graphics}
+\include{tex/vertical_line}
+\include{tex/xrd_scherrer}
 
 \end{document}
