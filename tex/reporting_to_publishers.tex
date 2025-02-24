@@ -1,0 +1,139 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\begin{comment}
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=3cm,yshift=1cm] current page.south west)
+            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
+     \end{tikzpicture}}
+ }
+\end{comment}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Reporting publication integrity issues to publishers}
+\addcontentsline{toc}{section}{Reporting publication integrity issues to publishers}
+\textit{Last updated: 24 February 2025}
+
+\subsection*{Integrity/ethics teams at publishers}
+
+Most of the large scientific publishers have whole departments for publication ethics and publication integrity. These departments investigate incoming reports of possible errors and will advise editors and editors-in-chief on how to correct the scientific record. Usually these departments will follow the guidelines set by the \href{https://publicationethics.org/}{Committee on Publication Ethics (COPE)}, which generally consists of reviewing the evidence, contacting the journal and authors and coming to some sort of closure.
+
+\subsection*{How to report issues to publishers}
+
+The best way to reach these teams is by e-mail. You can send this email both to the publisher's integrity team as well as to the journal's editors-in-chief. Some journals will have editorial board members that specifically handle ethics concerns or certain topics (e.g., disciplinary fields or specific methodologies).
+
+Just as described in the guide for \href{https://osf.io/sghaq}{PubPeer commenting best practices}, you should be clear and neutral when describing potential publication integrity issues to these teams. Always include the \href{https://www.doi.org/}{DOI} (or other permanent identifier, such as PubMed ID) of the article(s) in question and report in a neutral way about the issue(s). Including a link to PubPeer where the issues are discussed in greater depth or an including an image to illustrate an issue may be useful.
+
+Always be respectful when you contact publishers' integrity teams. Do not project frustrations or anger onto the members of these teams. Feel free to ask for a confirmation of receipt at the end of your email in order to make sure that the recipient has received all the relevant information.
+
+\subsection*{Example of a helpful e-mail to a publisher}
+
+\begin{quote}
+\textit{To whom it may concern,}\\
+\indent\\
+\textit{We have detected duplicated images in figures of articles published in [journal].}\\
+\indent\\
+\textit{We found an overlap between figure 1, panel A of Article 1 [DOI] and Figure 5, panel B of Article 2 [DOI]. We also found an overlap between Figure 3, panel C of Article 1 [DOI] and Figure 1, panel E of Article 3 [DOI].}\\
+\indent\\
+\textit{All of our findings have also been made publicly available on PubPeer:}\\
+\indent\\
+\textit{Article 1: [PubPeer link]\\
+Article 2: [PubPeer link]\\
+Article 3: [PubPeer link]\\}
+\indent\\
+\textit{Feel free to contact us with your questions. We’re happy to clarify any issues you might have. Could all of the recipients send us a confirmation of receipt of this e-mail and let us know what the time-frame will be for assessing these issues?}\\
+\indent
+\textit{Best,}\\
+\indent\\
+\textit{[Name/pseudonym]}
+\end{quote}
+
+\subsection*{What happens next?}
+
+You should be very patient after reporting an issue; investigations often take months if not years to resolve, even for blatant issues that seem to warrant immediate action. A publisher's integrity team may take one of several actions after being contacted regarding a publication integrity or ethics issue:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item When an investigation finds that the conclusions of the research are not affected, the authors will be given the chance to clarify or correct their article post-publication. This will be often done in the form of a \textit{correction}, which should detail what the initial problem was and how the problem was resolved.
+    \item When an investigation finds that conclusions of the research are affected or the work cannot be trusted, the article will usually be \textit{retracted}. A retraction note will be published, detailing why the problem was too substantial to correct.
+    \item When it is unclear whether the conclusions are affected by the reported issue, an \textit{expression of concern} might be issued. This is a way for publishers to show that readers should exercise increased caution when interpreting the results of the published article.
+    \item Nothing happens. Research integrity teams handle many cases and may drop a case with or without notifying the party that raised the issue.
+\end{itemize}
+
+When reporting an issue, you may ask to be notified when an investigation is resolved or an editorial notice is applied to an article, but you should not expect this.
+
+\pagebreak
+\subsection*{Contact information for integrity/ethics teams at major publishers}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item American Society for Microbiology: ethics.journals@asmusa.org
+    \item BMJ: publication.ethics@bmj.com
+    \item Elsevier (Elsevier, Cell Press): ethicsexpert@elsevier.com
+    \item Frontiers: research.integrity@frontiersin.org
+    \item IEEE: pub-ethics@ieee.org
+    \item Karger: publication.ethics@karger.com
+    \item MDPI: publication.ethics@mdpi.com
+    \item Oxford University Press: journals.ethics@oup.com
+    \item PLOS: pub-ethics@plos.org
+    \item Sage (Sage, Mary-Ann Liebert): publication\_ethics@sagepub.com
+    \item Springer Nature (Springer, Nature, BMC): ethics.reporting@springernature.com
+    \item Taylor \& Francis (Taylor \& Francis, Dove Medical Press): ethics@tandf.co.uk
+    \item Wiley (Wiley, Hindawi, FEBS Press): researchintegrity@wiley.com
+\end{itemize}
+
+\end{document}
