@@ -8,10 +8,6 @@ However, investigating the integrity of the published scientific literature ofte
 
 COSIG currently hosts 11 guides and was last updated on 3 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
-Except where otherwise indicated, all material in COSIG is available under a [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). That means that you are free to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as COSIG is properly cited. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
-
-![CC BY-NC-SA 4.0 shield](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
-
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/reeserich/cosig/issues).
 
 ## **Table of Contents**
@@ -43,6 +39,8 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 ## **License and citation**
 
 Except where otherwise indicated, all material in COSIG is available under a [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/). That means that you are free to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as COSIG is properly cited. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
+
+![CC BY-NC-SA 4.0 shield](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
 
 #### APA style citation
 
