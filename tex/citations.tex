@@ -1,0 +1,232 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\begin{comment}
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=3cm,yshift=1cm] current page.south west)
+            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
+     \end{tikzpicture}}
+ }
+\end{comment}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Citations}
+\addcontentsline{toc}{section}{Citations}
+\textit{Last updated: 11 March 2025}
+
+Science is built incrementally, one discovery at a time.
+Scientific articles \emph{cite} other articles to make reference to previous work and claims.
+\emph{Citations} are a core feature of all scientific papers.
+
+Citations are typically short references in an article's text to entries in a ``References'' or ``Bibliography'' section,
+which itself contains paper titles, author names, years, and so on.
+Different journals and publishers adopt different \href{https://libguides.brown.edu/citations/styles}{styles of citations}, typically either numeric (e.g., ``[1]'', ``[42]'')
+or author-year (e.g., ``[Smith 2024]'', ``[Garcia 1974b]''). Authors often cite multiple sources at once (e.g., ``Several studies have found that the $A$ is positively correlated with $B$ [Smith 2024, Rodriguez 2023, Wang 2022]'').
+
+Counting the number of times an article has been cited is an imperfect measure of how influential an article might be since it usually indicates that others found at least some part of the paper useful or otherwise built upon the work described in the article.
+
+Citation counting is also often used to measure the impact and influence of authors. For instance, authors are often judged by their \href{https://doi.org/10.1073%2Fpnas.0507655102}{$h$-index}.
+Someone with an $h$-index of $N$ has published $N$ articles each cited at least $N$ times. Similarly, journals are often evaluated by how often the articles they publish are cited, such as through the \href{https://doi.org/10.1001%2Fjama.295.1.90}{journal impact factor (JIF)}. JIF roughly corresponds to the average number of citations each article receives within a certain time frame following publication. The only official source for JIF is \href{https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/journal-citation-reports/}{Clarivate's Journal Citation Reports}, which uses the database \href{https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/}{Web of Science}.
+
+Heuristics like $h$-index and JIF are \href{https://doi.org/10.1038/d41586-022-02984-2}{used frequently in academic hiring and promotion decisions} as proxies of researcher productivity and influence. As a result, it is generally desirable for academics to acquire a higher number of citations than their peers. Similarly, journal editors and publishers may seek to increase the number of citations to their journals' articles to augment their journals' reputations.
+
+\subsection*{Expected citation behavior}
+
+Any claim that is not ``common sense'' or ``common knowledge'' generally requires a citation, although this is context-dependent.
+Citations can reference a specific claim from a source (e.g., ``Less than 40\% of frobnicators are red [Zhang 2003]''). 
+Citations can also point to a previous work as an example (e.g. ``We measure frobnication using the standard XYZ technique [24]'').
+For basic claims that would be common knowledge among an article's likely readers (e.g., ``DNA is double-stranded'' or ``computers use binary digits'')
+no citation is necessary.
+
+\subsection*{Problematic citation behavior}
+
+Citations can be problematic for a number of reasons. Some problematic citations behaviors are regular practice in science. For instance, authors may claim something about a cited article that is untrue or is unsupported by the cited article's text. Other problematic citation behaviors are the direct result of \href{https://doi.org/10.24318/cope.2019.3.1}{citation manipulation} intended to inflate the previously-described citation metrics.
+
+\subsection*{Archetypes of common problematic citation behaviors}
+
+This section describes common issues that can be found among an article's citations, as well as possible motivations and explanations for these issues. Relevant examples are provided for each. Note that these behaviors are not mutually exclusive.
+
+\subsubsection*{Missing citations}
+
+When making claims or showing data that was not the result of the authors' original research work, authors should cite their sources. Often, this does not actually occur.
+
+(\href{https://pubpeer.com/publications/8A2CF2E1EBFD3ADCD835ADB91DDFE8}{example})
+
+\subsubsection*{Citations that do not accurately reflect the content of the cited article}
+
+Statements containing citations often do not accurately reflect what is actually contained in the cited article. It is commonplace (but nonetheless problematic) for authors to \href{https://ori.hhs.gov/citing-sources-were-not-read-or-thoroughly-understood}{cite articles that they haven't actually thoroughly read}.
+
+(\href{https://pubpeer.com/publications/6E8756FAB18C392065D8313D271090}{example 1}, \href{https://pubpeer.com/publications/D3E493ADF94B3031D24C280F54F37E}{example 2})
+
+\subsubsection*{Many citations at once}
+
+More than a handful of citations to back up a single statement can be excessive. This practice can be especially problematic if these blocks of citations contain many citations to the same author or are mostly irrelevant to the statement being made.
+
+(\href{https://pubpeer.com/publications/D6A50C6DD455715DE626C1CC56B8EB}{example 1}, \href{https://pubpeer.com/publications/11C10949E0FF4EA3C31B6A45F4E22C}{example 2})
+
+\subsubsection*{Many citations to the same author}
+
+More than a handful of citations to the same author in a paper is unusual. This can occur naturally if most of the previous scholarship on a topic is by the same author. However, this can also be an indication of a deliberate effort to inflate particular authors' citation metrics. 
+
+(\href{https://pubpeer.com/publications/0C7C1F371CB05161EEACC303692521}{example})
+
+\subsubsection*{Many self-citations}
+
+Consistently citing the authors' own papers is problematic. Most citation metrics explicitly exclude self-citations.
+
+(\href{https://pubpeer.com/publications/3EAC0C5735F8D48FF1D4B06C6BFC30}{example})
+
+\subsubsection*{Unused citations}
+
+Citations are typically expected to be used in the paper's main text, so references that only appear in an article's bibliography can be suspicious.
+
+(\href{https://pubpeer.com/publications/0C7E7F2703724338046FF2A0AA8392}{example})
+
+\subsubsection*{Overly specific citations}
+
+Citing very specific applications of a concept instead of a definition or review of the concept is strange, especially for fundamental concepts.
+
+(\href{https://pubpeer.com/publications/5A064B2F4AE7F13D6E1F559F84492F}{example})
+
+\subsubsection*{Unrelated/irrelevant citations}
+
+Citing articles that have nothing to do with the statement for which they are cited (\emph{citation context}) is inherently problematic.
+
+(\href{https://pubpeer.com/publications/B9CE2B145B02E439BA9C5B2C2D5F12}{example 1}, \href{https://pubpeer.com/publications/C21D670DD4C94B02C78809A55ED385}{example 2})
+
+\subsubsection*{``Suggested'' citation batches}
+
+Reviewers who consistently ask authors to cite many of the reviewer's papers are, at best, in an ethical gray area. Authors will often include reviewers' and editors' suggested citations in the hopes of passing through peer review.
+
+(\href{https://pubpeer.com/publications/90719DBC6E5FF2AC32FDE74F1A6A7F}{example 1}, \href{https://pubpeer.com/publications/1924F147DE045B97261004EB2387AE}{example 2})
+
+\subsubsection*{Citation magnets}
+
+The same paper cited in irrelevant or barely relevant contexts across many papers,
+especially within the same venue, is an indication something is deeply wrong. 
+
+(\href{https://pubpeer.com/search?q=%22A+novel+Aluminum%E2%80%93graphite+dual-Ion+battery%22}{example 1}, cited 1,638 times, \href{https://pubpeer.com/publications/B71DD139D3549DCCA37DCEC8AF59D5}{example 2}, cited 49 times,  \href{https://docs.google.com/spreadsheets/d/1o-9OIyzZ9mMqA7bprcbI5nemtYBfxiXH1ndI3y5A43E/edit?usp=sharing}{a spreadsheet of likely citation magnets})
+
+\subsubsection*{Citations that were not intended by the authors}
+
+Authors often deny having inserted certain citations in their article.
+
+(\href{https://pubpeer.com/publications/8DC24BCCDA68EC1954E1FCA74FDB8E\#2}{example})
+
+\subsubsection*{Tortured titles}
+
+Some ``plagiarism avoidance'' software will paraphrase text in a way that results in \href{https://arxiv.org/abs/2107.06751}{tortured phrases}. Sometimes, citation titles are also paraphrased, resulting in the title of an article, as it appears in the bibliography section, not matching the actual published title of an article.
+
+(\href{https://pubpeer.com/publications/CF328DB7A6131B99F9805B49643D81\#2}{example})
+
+\subsubsection*{Large-language model (LLM) ``hallucinations'' and fabrications}
+
+LLM tools like ChatGPT often cite non-existent articles.
+
+(\href{https://pubpeer.com/publications/8D6BF963665181144EC553BE2FDA92\#2}{example 1},
+\href{https://web.archive.org/web/20230623093222/https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt}{example 2}, from outside of academic publishing)
+
+\subsection*{Common false alarms}
+
+\subsubsection*{Many relevant citations}
+
+Some authors go a bit overboard with
+relevant citations out of enthusiasm. If no other red flag applies,
+this is probably not problematic.
+
+\subsubsection*{Relevant, but occasional, suggested citations}
+
+Reviewers are typically experts in their subfield. It is innocuous for reviewers to occasionally suggest citations to their own works, especially when such works are the definitive sources for a claim.
+
+\subsubsection*{Occasional unused citations}
+
+Various software glitches can result in a bibliography not being updated along with the paper text.
+If one or two references appear only in the bibliography, but no other red flag applies, there is usually no cause for concern, although it may be worth a correction.
+
+\subsubsection*{Mistaken author names}
+
+Some styles of last name are often abbreviated incorrectly in bibliography sections.
+For instance, someone unfamiliar with French names might cite the former defense minister of France as ``Drian, Jean-Yves L.''
+when in fact ``Le Drian'' is a single family name. Reference managers might also treat the names of consortia as single authors (e.g., ``Open Science Collaboration'' being abbreviated as ``Collaboration, OS''.)
+
+\subsection*{Advanced cases}
+
+\subsubsection*{Sneaked references}
+
+What appears as a citation to human readers and what citation-counting software considers a citation may not match.
+Literature aggregation databases have been cheated in the past to increase citation counts in a way that is not detectable from just paper texts alone, in a practice known as \href{https://doi.org/10.1002/asi.24896}{``sneaking references''}.
+
+\subsubsection*{Hidden authors}
+
+To save space, some venues require papers with more than a few authors to be abbreviated using ``et al.'',
+such as ``Diallo, A., Nikolov, B., et al.''.
+This can be used to conceal the fact that many cited papers have authors in common.
+
+(\href{https://pubpeer.com/publications/00DCF18F504B8C420F12A70B5FB30C}{example})
+
+\subsubsection*{Vicker's curse}
+
+One notorious citation magnet \href{https://forbetterscience.com/2022/10/31/when-im-citing-you-will-you-answer-too/}{described first in 2022} is the 2017 editorial \href{https://doi.org/10.1016/j.cub.2017.05.064}{``Animal Communication: When I’m Calling You, Will You Answer Too?''} by Neil J. Vickers, which has been cited as many as 2000 times in contexts completely irrelevant to its subject matter (moth pheromones). Articles featuring this irrelevant citation were said to be afflicted by ``Vicker's curse''. In 2023, \href{https://forbetterscience.com/2023/07/31/the-vickers-curse-secret-revealed/}{it was discovered} that this article was often the first to appear when an incomplete digital object identifiers (DOIs) was entered into the searchbar on Google Scholar (specifically, the string ``10.1016/j.'' the prefix for many article DOIs used by Elsevier). There are \href{https://pubpeer.com/publications/4BB5BE5F56EFEBC3A67D89D1EB5501}{other probable examples} of citation magnets that result from searching incomplete DOIs. 
+
+\subsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://doi.org/10.24318/cope.2019.3.1}{COPE discussion document on citation manipulation}
+\end{itemize}
+
+\end{document}
