@@ -20,6 +20,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Software for image forensics](https://osf.io/g23pf)
 * [Reporting publication integrity issues to publishers](https://osf.io/4edk2)
 * [Citations](https://osf.io/zpf4r)
+* [Citations to retracted publications](https://osf.io/9q3as)
 
 ### Biology and medicine
 
