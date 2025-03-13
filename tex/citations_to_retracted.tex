@@ -1,0 +1,110 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\begin{comment}
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=3cm,yshift=1cm] current page.south west)
+            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
+     \end{tikzpicture}}
+ }
+\end{comment}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Citations to retracted publications}
+\addcontentsline{toc}{section}{Citations to retracted publications}
+\textit{Last updated: 13 March 2025}
+
+References to retracted publications can pose a reliability issue in scientific literature since retractions indicate that a publication has been found unreliable. Citations/references to such articles can disseminate unreliable information in the scientific literature. It is stated in \href{https://www.icmje.org/icmje-recommendations.pdf}{Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals} that authors are responsible for checking that none of the references cite retracted articles except in the context of referring to the retraction. 
+However, not all retracted articles are cited after their retraction (post-retraction citations), and not all citations serve the same purpose. It is important to consider the context in which a retracted paper is cited. A retraction in the references does not automatically make all citing papers unreliable, but citations to retracted publications can serve as a fingerprint for identifying potential issues in the literature. This guide provides information about how to identify such citations and what nuances should be considered in the analysis and reporting of these cases. 
+
+\subsection*{Identifying citations to retracted publications}
+The \href{https://dbrech.irit.fr/pls/apex/f?p=9999:31}{Problematic Paper Screener’s Feet of Clay Detector} is a dynamic tool that identifies and maintains an updated record of publications that may be unreliable as they cite one or more  retracted/removed/withdrawn references spotted by the \href{https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener/annulled}{Annulled Detector}. However, one limitation of this detector is that it does not provide further assessment regarding the extent to which the credibility of a citing work is affected by the fact that it cites retracted articles. Because of this, the tool has a feedback feature to identify false positive cases (e.g., a retracted work was cited and criticized, or the retraction is acknowledged). For true positives (e.g., a retracted work’s data was used by or central to the citing work), PubPeer comments are encouraged. 
+
+\subsection*{Why was the cited publication retracted?} 
+
+Retractions can happen for non-scientific content related reasons. This can potentially reduce the idea of ‘propagation of unreliable science’. The \href{https://retractionwatch.com/retraction-watch-database-user-guide/retraction-watch-database-user-guide-appendix-b-reasons/}{Retraction Watch Database User Guide Appendix B: Reasons} describes various common reasons why retractions occur. For example, if an article was retracted based on the content of the publication (e.g., retraction reasons ``error in data/analyses'', ``error in cell lines'') can imply a potential reliability issue for the citing work if the data and analyses of this publication were a central part of the citing work. This information is particularly helpful when analyzing large amounts of citations since it can be obtained from the joint database of \href{https://gitlab.com/crossref/retraction-watch-data}{Retraction Watch and Crossref}. For case-by-case analyses, retraction notices can provide more detailed and accurate information about reasoning. 
+
+\subsection*{Post- and pre-retraction citations}
+
+Publications may be cited after they are retracted (post-retraction citation), or they might have been cited before they were retracted (pre-retraction citation). Systematic analyses usually allow a gap of 1-2 years after retraction before considering a citation to be post-retraction (retraction notices take time to appear on journal sites and bibliometric databases and are often \href{https://retractionwatch.com/2024/07/05/how-you-can-help-improve-the-visibility-of-retractions-introducing-nisos-recommended-practice-for-communication-of-retractions-removals-and-expressions-of-concern-crec/}{not prominent at all}). Post-retraction citations are likely not problematic for the citing work if the retraction is acknowledged by the authors, if the work is used to be criticized or questioned or is shown as an example of `bad science'. It is also important to be aware of whether or not the post-retraction citation is a self-citation (i.e., by the same authors or same research group) since this can be particularly problematic; in these case, the odds are higher that retraction of the cited work was outright ignored. For pre-retraction citations, which are much more common in the literature, it is important that the authors are aware of the status of their references to reflect back on the use of these works. 
+
+\subsection*{How is the retracted work cited?}
+
+When reporting these cases on PubPeer or providing feedback on the Feet of Clay Detector, it is important to dig a bit deeper in the citing works to understand the purpose the citation in the citing work. It is important to consider the full-text to retrieve the citation context (the sentence/section in which the citation occurs). Only by access to this context can one identify if the cited retracted work is used in the methodology/approach of the citing work, which could be especially problematic. On the other hand, a retracted work could be cited as part of a passing mention of related works or as basic background information. This usually does not imply an unreliability issue for the citing work. 
+
+\subsection*{Quantity of citations to retracted works}
+
+It is common to see PubPeer comments focused on the quantity or frequency of citations to retracted or otherwise questionable publications within a citing work, rather than looking at the specific contexts (which often require significant domain expertise and time). These comments can be strengthened with more evidence from the citing paper. 
+
+\subsection*{Example 1: Dozens of citations to retracted articles}
+
+\href{https://doi.org/10.1007/s12094-019-02104-z}{Viera et al. (2019)} performed a review of the literature on microRNA signatures in childhood sarcomas. Of 637 references in the work, more than 60 are to retracted publications, at least two of which were retracted at the time of publication. An \href{https://doi.org/10.1007/s12094-024-03518-0}{expression of concern} was published for the article in 2024, citing an over-reliance on retracted works.
+%(Yagmur: I can later on update this part with my PMC sentence extraction and discourse analysis pipeline once it’s on github/after I receive reviews)
+
+\subsection*{Example 2: Retraction due to citing retracted work}
+
+\href{http://dx.doi.org/10.2174/157488606775252629}{Iwamoto et al. (2006)} reviewed the literature on the use of vitamin K2 in the treatment of postmenopausal osteoporosis. This review was subsequently retracted (at a date not included in the retraction notice) for references to thee retracted works (out of 45 references), two of which were also authored by the authors of the review. These articles were retracted years after the publication of the review. The retraction notice states that ``[the] citation of these papers in this article seriously undermines the authenticity and integrity of the content presented''.
+
+\subsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://dbrech.irit.fr/pls/apex/f?p=9999:31::::::}{The Problematic Paper Screener: Feet of Clay Detector}
+    \item \href{https://doi.org/10.1378/chest.11-0523}{``Exclusive: the papers that most heavily cite retracted studies'' (2024)}
+\end{itemize}
+
+\end{document}
