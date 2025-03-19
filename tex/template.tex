@@ -41,19 +41,6 @@
 \pagenumbering{gobble}
 \usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
 
-\begin{comment}
-\backgroundsetup{
-   scale=1,
-   angle=0,
-   opacity=1,
-   color=black,
-   contents={\begin{tikzpicture}[remember picture, overlay]
-      \node at ([xshift=3cm,yshift=1cm] current page.south west)
-            {\includegraphics[width = 5cm]{img/home/241017_final_logo_mockup.png}}; %<- change the name of image
-     \end{tikzpicture}}
- }
-\end{comment}
-
 \titlespacing*{\section}
 {0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
 
@@ -98,5 +85,7 @@ If there is a large block of quoted text, use:
 \begin{quote}
     \textit{Note that this text is in italics!}
 \end{quote}
+
+When linking out to articles using \verb|\href|, try to use the DOI instead of a link to the publisher site or PubMed page.
 
 \end{document}
