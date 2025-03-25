@@ -1,12 +1,13 @@
 ![COSIG logo](https://github.com/reeserich/cosig/blob/main/img/home/241017_final_logo_mockup.png)
 
 # **Anyone can do post-publication peer review.**
+# **Anyone can be a steward of the scientific literature.**
 # **Anyone can do forensic metascience.**
 # **Anyone can sleuth.**
 
 However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This project is a collection of guides written by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 13 guides and was last updated on 19 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
+COSIG currently hosts 14 guides and was last updated on 25 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/reeserich/cosig/issues).
 
@@ -31,6 +32,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [X-ray diffraction patterns - Scherrer's equation](https://osf.io/hf7qy)
 * [Energy dispersive X-ray spectroscopy](https://osf.io/shfjy)
 * [Elemental composition](https://osf.io/st8up)
+* [Tauc plots](https://osf.io/gpxvf)
 
 ### Mathematics and statistics
 

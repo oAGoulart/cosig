@@ -1,0 +1,171 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Plagiarism}
+\addcontentsline{toc}{section}{Plagiarism}
+\textit{Last updated: 22 March 2025}
+
+Scientific articles must be \emph{novel}, i.e., represent new work, so that the total body of scientific knowledge can grow.
+Without novelty, science would stagnate.
+The simplest way in which novelty can be broken is \emph{plagiarism}: copying someone else's text, possibly with minor alterations, and passing it as one's own work.
+
+Plagiarism is one of the most well-known kinds of scientific fraud.
+Even non-scientists know what plagiarism is, likely because they learned proper quotation practices at school.
+Unfortunately, this awareness does not translate to a lack of plagiarism in science.
+
+High-profile plagiarism cases make the news regularly, such as those of a \href{https://www.theguardian.com/education/2024/jan/06/harvard-claudine-gay-plagiarism}{Harvard president} and a \href{https://www.bbc.com/news/world-europe-12504347}{German defense minister}.
+These cases often are in works that predate the Internet and modern plagiarism detection tools.
+Many cases likely come from a combination of laziness and lack of foresight that automated detection tools and paper databases would one day exist.
+
+However, plagiarism is also a way for people who fail to produce scientific results to obtain a degree anyway.
+Besides the German defense minister mentioned above, 
+a \href{https://www.bbc.com/news/world-europe-21395102}{German education minister} 
+and a \href{https://www.politico.eu/article/german-family-minister-franziska-giffey-resigns-over-plagiarism-accusations-berlin-mayor-bid/}{German family minister} also resigned over plagiarism in their thesis.
+German state broadcaster Deutsche Welle \href{https://www.dw.com/en/why-do-german-politicians-so-often-stumble-over-phd-plagiarism-allegations/a-57651910}{hypothesized} that because doctoral degrees are an advantage in German politics, some unethical politicians want to obtain one by any means necessary.
+
+\subsection*{Expected quoting behavior}
+
+When quoting another publication, a scientific publication must do so with quotation marks around the entire citation.
+The original source must be properly referenced, such as with a footnote or a reference to the publication's bibliography.
+
+Different cultures have slightly different expectations, but these are minor and still obey the simple rule of quotation marks.
+For instance, in US English, citations end with a punctuation mark within quotation marks, regardless of whether that punctuation was in the original source, ``like this.''
+In French, citations may include who states them, ``like this, the guide states, unlike in English''.
+
+\subsection*{Simple plagiarism: copied text}
+
+Copying text from another source without quotation marks and a source is the simplest form of plagiarism.
+
+In small quantities, it can be a sign of forgetfulness, which is bad and deserves a correction but may not rise to the level of fraud.
+This is especially apparent when the plagiarized text is small, such as a single sentence, and properly quoted or sourced elsewhere in the paper.
+
+Detecting simple plagiarism can be done at scale with automated tools such as \href{https://www.turnitin.com/products/ithenticate/}{iThenticate}, which many publishers use internally on submitted manuscripts. 
+Using a large database of published texts, these tools attempt to find copied portions of existing texts in a specific manuscript.
+
+In a single paper, detecting simple plagiarism is often a gut reaction.
+The tone of the text suddenly changes.
+Identical concepts are suddenly referred to with wildly different vocabulary.
+A poorly-written manuscript suddenly switches to perfect grammar and spelling. Looking up one of the offending sentences in a search engine often brings up its source.
+
+\subsection*{Plagiarism ``scores''}
+
+Automated tools typically output some form of ``score'', such as the fraction of the input text copied from existing texts.
+This score is intended to help humans make a judgment call, not to be used as an objective metric, yet it is frequently misused.
+
+The fraction is rarely zero, as tools will pick up the titles of cited works, the name of the venue in the headers or footers, and other such constructs that are unoriginal by definition.
+A human assessor should quickly take a look, see that the ``copied'' text is indeed harmless, and dismiss the findings.
+
+Some venues explicitly put thresholds on tool-assisted plagiarism detection, such as requiring ``a plagiarism score of 15\% maximum''.
+\textbf{Using a plagiarism score as review criterion is inherently problematic}.
+An automated tool can find copied passages but not decide whether their context is acceptable.
+Putting a threshold on plagiarism is a poor attempt at covering for a lackluster review process.
+
+\subsection*{Complex plagiarism: tortured phrases}
+
+Authors who know that their work will be checked for plagiarism often try to hide it by making lots of small changes.
+For instance, they may replace some words with synonyms, change the punctuation, or interweave plagiarized sentences with their own.
+
+Plagiarism avoidance is often done without much human effort, since plagiarism itself is low-effort.
+Automated word replacement can be done automatically, with software that randomly chooses some words in a text and replaces them with synonyms.
+Because scientific papers use lots of jargon with specific meaning, the synonyms found in a thesaurus may not be synonyms in the scientific sense.
+
+Automated plagiarism avoidance thus creates \href{https://thebulletin.org/2022/01/bosom-peril-is-not-breast-cancer-how-weird-computer-generated-phrases-help-researchers-find-scientific-publishing-fraud/}{\textbf{tortured phrases}},
+sentences that are devoid of scientific meaning and often not even grammatically correct.
+For instance, ``bosom peril'' is a torture of ``breast cancer'',
+while ``computer getting to know'' is a torture of ``machine learning''.
+Some tortured phrases can be particularly funny, such as ``0.33-celebration'' for ``third-party'',
+which makes sleuthing for plagiarism a little more enjoyable.
+
+Traditional plagiarism avoidance software has no understanding of grammar or other writing concepts,
+which can create distinctive signs.
+For instance, if the original paper contains ``Artificial Intelligence (AI)'',
+a tortured version might contain ``man-made consciousness (AI)'',
+retaining the acronym because the software has no concept of acronyms and thus cannot replace it.
+Even proper nouns can be replaced if they happen to look like a common noun,
+leading to absurdities like ``\href{https://pubpeer.com/publications/059D502827972226591FC5F5421221}{Glove Romney}''.
+
+The \href{https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener}{Problematic Paper Screener},
+or ``PPS'' for short, can find tortured phrases at scale, as it looks through the scientific literature for known tortured phrases.
+One easy way to help steward the scientific literature is to look through the PPS's findings on tortured phrases for entries that have not yet been assessed by a human and follow the instructions to report the problem on PubPeer.
+
+When reading a paper with tortured phrases, you may encounter terms the PPS did not detect but that also look like tortured phrases.
+Look these up in a search engine such as Google Scholar, and if the results look fishy, use the PPS's feedback tool to suggest adding your findings to the tortured phrase database.
+(You can also search your tortured phrase candidate in a normal search engine for amusement purposes, perhaps you'll find ``\href{https://web.archive.org/web/20250322132615/https://www.amazon.com/Mitt-Romney-Biography-Book-Flexibility-ebook/dp/B0CLKZKKQG}{a dazzling biography of Glove Romney}''!)
+
+Importantly, \textbf{the reviewers who accept papers with tortured phrases, and the editors who publish them, are either complicit or incompetent}.
+No serious peer reviewer would accept a paper purporting to detect ``bosom peril'' using ``man-made consciousness''.
+Venues that publish such work likely contain other problems.
+
+\subsection*{Finding originals}
+
+Pointing out tortured phrases is good, but finding the original plagiarized source is even better.
+This can be harder than it sounds depending on how tortured the text is.
+
+Finding the original text from a tortured text boils down to (1) guessing which parts of a text have been replaced, (2) guessing what the original words were, and (3) searching for the possible original words.
+
+For instance, let's say you find a PubPeer post pointing out that a paper talks of ``arbitrary backwoods'' instead of ``random forest'', along with other tortures.
+You see a paragraph titled ``Hybrid approach'' that begins with ``A mixture approach joins the upsides of the computerized and manual strategies to create a land cover map that is in a way that is better than if a solitary technique was available.''
+The paragraph title is a hint that the original used ``hybrid'' rather than ``mixture''.
+A little guessing says ``upsides'' might be ``advantages'' and ``computerized'' might be ``automated''.
+So you look up \texttt{"hybrid\ approach"\ "advantages\ of\ the\ automated\ and\ manual"} in your favorite search engine.
+Importantly, you do not need to guess an entire original sentence, fragments are enough.
+You then find a PDF with these exact words and, surprise, it also contains the same pictures as the offending paper, but in higher resolution.
+The result is \href{https://pubpeer.com/publications/AF1D5A725FF3C6C0B3C5030301D6A8\#5}{this PubPeer post}.
+
+Looking for words that \emph{aren't} tortured can be useful if they are unique enough that they help narrow down the search.
+
+It is important to \textbf{provide evidence that the ``original'' source predates the ``plagiarized'' version}.
+You can do this using the publication dates, or other details such as the original having high-resolution versions of figures that are blurry in the copy.
+Otherwise, you may accidentally point to a later plagiarism and accuse an innocent text.
+
+\end{document}
