@@ -7,7 +7,7 @@
 
 However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This project is a collection of guides written by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 14 guides and was last updated on 25 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
+COSIG currently hosts 15 guides and was last updated on 27 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/reeserich/cosig/issues).
 
@@ -22,6 +22,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Reporting publication integrity issues to publishers](https://osf.io/4edk2)
 * [Citations](https://osf.io/zpf4r)
 * [Citations to retracted publications](https://osf.io/9q3as)
+* [Plagiarism of text](https://osf.io/ntcb4)
 
 ### Biology and medicine
 
