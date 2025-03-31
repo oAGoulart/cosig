@@ -5,9 +5,9 @@
 # **Anyone can do forensic metascience.**
 # **Anyone can sleuth.**
 
-However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This project is a collection of guides written by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
+However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This open source project is a collection of guides written and maintained by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 15 guides and was last updated on 28 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
+COSIG currently hosts 15 guides and was last updated on 30 March 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/reeserich/cosig/issues).
 
