@@ -7,7 +7,7 @@
 
 However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This open source project is a collection of guides written and maintained by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 21 guides and was last updated on 8 May 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
+COSIG currently hosts 22 guides and was last updated on 13 May 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/reeserich/cosig/issues). Before contributing, read COSIG's [Contributing](https://github.com/reeserich/cosig/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/reeserich/cosig/blob/main/CODE_OF_CONDUCT.md) pages.
 
@@ -40,9 +40,10 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Elemental composition](https://osf.io/st8up)
 * [Tauc plots](https://osf.io/gpxvf)
 
-### Mathematics and statistics
+### Mathematics, statistics and computer science
 
 * [Evaluating the performance of binary classifiers](https://osf.io/pvr4a)
+* [Evaluating the performance of multiclass classifiers](https://osf.io/5x2rp)
 * [Standard deviation versus standard error](https://osf.io/hp4yd)
 * [Multiple hypothesis correction](https://osf.io/csxd5)
 

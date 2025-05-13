@@ -52,7 +52,7 @@
 \addcontentsline{toc}{part}{Mathematics and statistics}
 \section*{Evaluating the performance of binary classifiers}
 \addcontentsline{toc}{section}{Evaluating the performance of binary classifiers}
-\textit{Last updated: 7 May 2025}
+\textit{Last updated: 13 May 2025}
 
 A \href{https://en.wikipedia.org/wiki/Classification_rule}{classifier} is a procedure that sorts objects in a population into classes. A binary classifier sorts a population into two classes. Some examples of binary classifiers include:
 
@@ -78,7 +78,7 @@ The number of objects in the population in each outcome is typically represented
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{img/classifier_eval/confusion_matrix.png}
+    \includegraphics[width=0.75\textwidth]{img/binary_classifiers/confusion_matrix.png}
     \caption*{A confusion matrix. Adapted from \href{https://en.wikipedia.org/wiki/Confusion_matrix}{Wikipedia}.}
 \end{figure}
 
@@ -118,7 +118,7 @@ Sometimes scientific articles will report a value for a metric that does not mat
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=\textwidth]{img/classifier_eval/extended_confusion_matrix.png}
+    \includegraphics[width=\textwidth]{img/binary_classifiers/extended_confusion_matrix.png}
     \caption*{An extended confusion matrix detailing various metrics for evaluating binary classifiers. Adapted from \href{https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers}{Wikipedia}.}
 \end{figure}
 
@@ -174,7 +174,7 @@ $$\textrm{FOR} = \frac{\textrm{FN}}{\textrm{PN}} = \frac{\textrm{FN}}{\textrm{TN
 
 \subsection*{Accuracy}
 
-Accuracy measures the overall predictive performance of a binary classifier. It is the likelihood that a predicted class is correct. For a binary classifier, accuracy will always be greater than or equal to 0.0 and less than or equal to 1.0.
+Accuracy measures the overall predictive performance of a binary classifier. It is the likelihood that a predicted class is correct. Accuracy will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{Accuracy} = \frac{\textrm{TP} + \textrm{TN}}{\textrm{P} + \textrm{N}}$$
 
@@ -186,9 +186,9 @@ $$\textrm{Balanced Accuracy} = \frac{\textrm{TPR} + \textrm{TNR}}{2}$$
 
 \subsection*{F1 score}
 
-F1 score, also called F-score or F-measure, is a composite score for evaluating the overall performance of a binary classifier. It is the \href{https://en.wikipedia.org/wiki/Harmonic_mean}{harmonic mean} of PPV (precision) and TPR (recall). Thus, F1 score must fall between the values of PPV and TPR. For a binary classifier, F1 score will always be greater than or equal to 0.0 and less than or equal to 1.0 (note that this is not necessarily the case for multiclass classifiers).
+F1 score, also called F-score or F-measure, is a composite score for evaluating the overall performance of a binary classifier. It is the \href{https://en.wikipedia.org/wiki/Harmonic_mean}{harmonic mean} of PPV (precision) and TPR (recall). Thus, F1 score must fall between the values of PPV and TPR (note that this is not necessarily the case for multiclass classifiers, see COSIG's \href{https://osf.io/5x2rp}{entry on multiclass classifiers here}). For a binary classifier, F1 score will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
-$$\textrm{F1} = \frac{1}{\frac{1}{PPV} + \frac{1}{\textrm{TPR}}} = \frac{2 \cdot \textrm{TPR} \cdot \textrm{PPV}}{\textrm{TPR} + \textrm{PPV}} = \frac{2 \cdot \textrm{TP}}{2 \cdot \textrm{TP} + \textrm{FP} + \textrm{FN}}$$
+$$\textrm{F1} = \frac{2}{\frac{1}{PPV} + \frac{1}{\textrm{TPR}}} = \frac{2 \cdot \textrm{TPR} \cdot \textrm{PPV}}{\textrm{TPR} + \textrm{PPV}} = \frac{2 \cdot \textrm{TP}}{2 \cdot \textrm{TP} + \textrm{FP} + \textrm{FN}}$$
 
 \subsection*{Matthews Correlation Coefficient (MCC)}
 
@@ -207,7 +207,7 @@ The \href{https://en.wikipedia.org/wiki/Phi_coefficient}{Matthews Correlation Co
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=\textwidth]{img/classifier_eval/mao_et_al_table_3.png}
+    \includegraphics[width=\textwidth]{img/binary_classifiers/mao_et_al_table_3.png}
     \caption*{Adapted from Table 3 of \href{https://doi.org/10.1007/s12665-024-11768-y}{Mao et al. (2024)}.}
 \end{figure}
 
@@ -219,7 +219,7 @@ The \href{https://en.wikipedia.org/wiki/Phi_coefficient}{Matthews Correlation Co
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=\textwidth]{img/classifier_eval/lihore_f1.png}
+    \includegraphics[width=\textwidth]{img/binary_classifiers/lihore_f1.png}
     \caption*{Adapted from Table 5 of \href{https://doi.org/10.1038/s41598-023-41314-y}{Lihore et al. (2023)}.}
 \end{figure}
 
@@ -229,24 +229,9 @@ The \href{https://en.wikipedia.org/wiki/Phi_coefficient}{Matthews Correlation Co
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=\textwidth]{img/classifier_eval/arthanari_et_al_table_1.png}
+    \includegraphics[width=\textwidth]{img/binary_classifiers/arthanari_et_al_table_1.png}
     \caption*{Adapted from Table 1 of \href{https://doi.org/10.7759/cureus.58500}{Arthanari et al. (2024)}.}
 \end{figure}
-
-\begin{comment}
-
-\subsection*{Example 3: Impossible accuracy, F1, precision and recall scores}
-
-\href{https://doi.org/10.1109/IC3I59117.2023.10397896}{Sharma et al. (2023)} report on models for predicting disease. At many points throughout the text, the authors report values for evaluation metrics that are not possible, such as when they claim that a model ``excels with an f1
-score of 0.11 and an accuracy of 1.76'' (accuracy cannot be greater than 1.0). Table 2 reports several values for precision, recall and F1 score greater than 1.0, also impossible for a binary classifier. An \href{https://doi.org/10.1109/IC3I59117.2023.10703725}{expression of concern} was issued for this article in 2024.
-
-\begin{figure}[h!tbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{img/classifier_eval/sharma_et_al_table_2.png}
-    \caption*{Adapted from Table 2 of \href{https://doi.org/10.1109/IC3I59117.2023.10397896}{Sharma et al. (2023)} .}
-\end{figure}
-
-\end{comment}
 
 \subsection*{Additional resources}
 
@@ -254,6 +239,7 @@ score of 0.11 and an accuracy of 1.76'' (accuracy cannot be greater than 1.0). T
     \setlength\itemsep{-0.5em}
     \item \href{https://doi.org/10.1016/j.aci.2018.08.003}{``Classification assessment methods'' (2020)}
     \item \href{https://doi.org/10.1186/s12864-019-6413-7}{``The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation'' (2020)}
+    \item  \href{https://osf.io/5x2rp}{COSIG: Evaluating the performance of multiclass classifiers}
 \end{itemize}
 
 
