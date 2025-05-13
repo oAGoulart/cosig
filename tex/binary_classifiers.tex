@@ -54,12 +54,12 @@
 \addcontentsline{toc}{section}{Evaluating the performance of binary classifiers}
 \textit{Last updated: 7 May 2025}
 
-A \href{https://en.wikipedia.org/wiki/Classification_rule}{classifier} is an procedure that sorts objects in a population into classes. A binary classifier sorts a population into two classes. Some examples of binary classifiers include:
+A \href{https://en.wikipedia.org/wiki/Classification_rule}{classifier} is a procedure that sorts objects in a population into classes. A binary classifier sorts a population into two classes. Some examples of binary classifiers include:
 
 \begin{itemize}
     \setlength\itemsep{-0.5em}
     \item a computer vision program that predicts if an image depicts a horse or does not depict a horse
-    \item a medical diagnostic criteria (has a diseases versus does not have a disease)
+    \item medical diagnostic criteria (has a disease versus does not have a disease)
     \item an algorithm that predicts whether or not it will rain on a given day
     \item a statistical test (null hypothesis rejected versus null hypothesis not rejected)
 \end{itemize}
@@ -85,7 +85,7 @@ The number of objects in the population in each outcome is typically represented
 For example, the following classes and predicted classes (True, T and False, F):
 
 \begin{center}
-\begin{tabular}{|p{2.0cm}|p{2.0cm}|p{2.0cm}|}
+\begin{tabular}{|l|l|l|}
 \hline
      \textbf{Actual Class} & \textbf{Predicted Class} & \textbf{Outcome}\\ \hline\hline
      T & T & TP \\\hline
@@ -126,49 +126,49 @@ Sometimes scientific articles will report a value for a metric that does not mat
 
 \subsection*{True positive rate (TPR)/recall/sensitivity}
 
-True positive rate (TPR), commonly called recall or sensitivity, is the likelihood that an an actual positive is predicted as a positive. In the context of hypothesis testing, this metric is often described as power. For a binary classifier, TPR will always be greater than or equal to 0.0 and less than or equal to 1.0.
+True positive rate (TPR), commonly called recall or sensitivity, is the likelihood that an an actual positive is predicted as a positive. In the context of hypothesis testing, this metric is often described as power. TPR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{TPR} = \frac{\textrm{TP}}{\textrm{P}}$$
 
 \subsection*{False negative rate (FNR)}
 
-False negative rate (FNR), also called miss rate, is the likelihood that an actual positive is predicted as a negative. TPR and FNR invariably sum to 1.0. For a binary classifier, FNR will always be greater than or equal to 0.0 and less than or equal to 1.0.
+False negative rate (FNR), also called miss rate, is the likelihood that an actual positive is predicted as a negative. TPR and FNR invariably sum to 1.0. FNR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{FNR} = \frac{\textrm{FN}}{\textrm{P}} = 1 - \textrm{TPR}$$
 
 \subsection*{False positive rate (FPR)}
 
-False positive rate (FPR) is the likelihood that an actual negative is predicted as a positive. For a binary classifier, FPR score will always be greater than or equal to 0.0 and less than or equal to 1.0.
+False positive rate (FPR) is the likelihood that an actual negative is predicted as a positive. FPR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{FPR} = \frac{\textrm{FP}}{\textrm{N}}$$
 
 \subsection*{True negative rate (TNR)/specificity}
 
-True negative rate (TNR), commonly called specificity, is the likelihood that an actual negative is predicted as a negative. TNR and FPR invariably sum to 1.0. For a binary classifier, TNR will always be greater than or equal to 0.0 and less than or equal to 1.0.
+True negative rate (TNR), commonly called specificity, is the likelihood that an actual negative is predicted as a negative. TNR and FPR invariably sum to 1.0. TNR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{FNR} = \frac{\textrm{FP}}{\textrm{N}} = 1 - \textrm{FPR}$$
 
 \subsection*{Positive predictive value (PPV)/precision}
 
-Positive predictive value (PPV), commonly called precision, describes the likelihood that any predicted positive is a true positive. For a binary classifier, PPV will always be greater than or equal to 0.0 and less than or equal to 1.0.
+Positive predictive value (PPV), commonly called precision, describes the likelihood that any predicted positive is a true positive. PPV will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{PPV} = \frac{\textrm{TP}}{\textrm{PP}} = \frac{\textrm{TP}}{\textrm{TP} + \textrm{FP}}$$
 
 \subsection*{False discovery rate (FDR)}
 
-False discovery rate (FDR) describes the likelihood that any predicted positive is a false positive. PPV and FDR invariably sum to 1.0. For a binary classifier, FDR will always be greater than or equal to 0.0 and less than or equal to 1.0.
+False discovery rate (FDR) describes the likelihood that any predicted positive is a false positive. PPV and FDR invariably sum to 1.0. FDR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{FDR} = \frac{\textrm{FP}}{\textrm{PP}} = \frac{\textrm{FP}}{\textrm{TP} + \textrm{FP}} = 1 - \textrm{PPV}$$
 
 \subsection*{Negative predictive value (NPV)}
 
-Negative predictive value (NPV) describes the likelihood that any predicted negative is a true negative. For a binary classifier, NPV will always be greater than or equal to 0.0 and less than or equal to 1.0.
+Negative predictive value (NPV) describes the likelihood that any predicted negative is a true negative. NPV will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{NPV} = \frac{\textrm{TN}}{\textrm{PN}} = \frac{\textrm{TN}}{\textrm{TN} + \textrm{FN}}$$
 
 \subsection*{False omission rate (FOR)}
 
-False omission rate (FOR) describes the likelihood that any predicted negative is a false negative. NPV and FOR invariably sum to 1.0. For a binary classifier, FOR will always be greater than or equal to 0.0 and less than or equal to 1.0.
+False omission rate (FOR) describes the likelihood that any predicted negative is a false negative. NPV and FOR invariably sum to 1.0. FOR will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{FOR} = \frac{\textrm{FN}}{\textrm{PN}} = \frac{\textrm{FN}}{\textrm{TN} + \textrm{FN}}$$
 
@@ -180,13 +180,13 @@ $$\textrm{Accuracy} = \frac{\textrm{TP} + \textrm{TN}}{\textrm{P} + \textrm{N}}$
 
 \subsection*{Balanced accuracy}
 
-Balanced accuracy also measures the overall predictive performance of a binary classifier and is generally used when there is a large imbalance in classes (i.e., there are many more actual negatives than actual positives or vice versa). It is the \href{https://en.wikipedia.org/wiki/Arithmetic_mean}{arithmetic mean} of TPR (sensitivity) and TNR (specificity). Thus, balanced accuracy must fall between the values of TPR and TNR. For a binary classifier, balanced accuracy will always be greater than or equal to 0.0 and less than or equal to 1.0.
+Balanced accuracy also measures the overall predictive performance of a binary classifier and is generally used when there is a large imbalance in classes (i.e., there are many more actual negatives than actual positives or vice versa). It is the \href{https://en.wikipedia.org/wiki/Arithmetic_mean}{arithmetic mean} of TPR (sensitivity) and TNR (specificity). Thus, balanced accuracy must fall between the values of TPR and TNR. Balanced accuracy will always be greater than or equal to 0.0 and less than or equal to 1.0.
 
 $$\textrm{Balanced Accuracy} = \frac{\textrm{TPR} + \textrm{TNR}}{2}$$
 
 \subsection*{F1 score}
 
-F1 score, also called F-score or F-measure, is a composite score for evaluating the overall performance of a binary classifier. It is the \href{https://en.wikipedia.org/wiki/Harmonic_mean}{harmonic mean} of PPV (precision) and TPR (recall). Thus, F1 score must fall between the values of PPV and TPR. For a binary classifier, F1 score will always be greater than or equal to 0.0 and less than or equal to 1.0.
+F1 score, also called F-score or F-measure, is a composite score for evaluating the overall performance of a binary classifier. It is the \href{https://en.wikipedia.org/wiki/Harmonic_mean}{harmonic mean} of PPV (precision) and TPR (recall). Thus, F1 score must fall between the values of PPV and TPR. For a binary classifier, F1 score will always be greater than or equal to 0.0 and less than or equal to 1.0 (note that this is not necessarily the case for multiclass classifiers).
 
 $$\textrm{F1} = \frac{1}{\frac{1}{PPV} + \frac{1}{\textrm{TPR}}} = \frac{2 \cdot \textrm{TPR} \cdot \textrm{PPV}}{\textrm{TPR} + \textrm{PPV}} = \frac{2 \cdot \textrm{TP}}{2 \cdot \textrm{TP} + \textrm{FP} + \textrm{FN}}$$
 
@@ -223,6 +223,18 @@ The \href{https://en.wikipedia.org/wiki/Phi_coefficient}{Matthews Correlation Co
     \caption*{Adapted from Table 5 of \href{https://doi.org/10.1038/s41598-023-41314-y}{Lihore et al. (2023)}.}
 \end{figure}
 
+\subsection*{Example 3: Incorrect accuracy calculation}
+
+\href{https://doi.org/10.7759/cureus.58500}{Arthanari et al. (2024)} report on using measurements of the mandible to predict a patient's sex. The authors state ``89.4\% of the original group were correctly classified as male and female'' in reference to a confusion matrix shown in Table 1. However, this confusion matrix implies an accuracy of (230 + 215)/(250 + 250) = 89.0\%, not 89.4\%.
+
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/classifier_eval/arthanari_et_al_table_1.png}
+    \caption*{Adapted from Table 1 of \href{https://doi.org/10.7759/cureus.58500}{Arthanari et al. (2024)}.}
+\end{figure}
+
+\begin{comment}
+
 \subsection*{Example 3: Impossible accuracy, F1, precision and recall scores}
 
 \href{https://doi.org/10.1109/IC3I59117.2023.10397896}{Sharma et al. (2023)} report on models for predicting disease. At many points throughout the text, the authors report values for evaluation metrics that are not possible, such as when they claim that a model ``excels with an f1
@@ -233,6 +245,8 @@ score of 0.11 and an accuracy of 1.76'' (accuracy cannot be greater than 1.0). T
     \includegraphics[width=0.8\textwidth]{img/classifier_eval/sharma_et_al_table_2.png}
     \caption*{Adapted from Table 2 of \href{https://doi.org/10.1109/IC3I59117.2023.10397896}{Sharma et al. (2023)} .}
 \end{figure}
+
+\end{comment}
 
 \subsection*{Additional resources}
 
