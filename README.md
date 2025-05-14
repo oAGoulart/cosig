@@ -29,6 +29,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 
 ### Biology and medicine
 
+* [Antibody validation](https://osf.io/c6qmj)
 * [Misidentified and non-verifiable cell lines](https://osf.io/d7we5)
 * [Nucleotide sequence reagents](https://osf.io/2egvz)
 * [Tumor burden](https://osf.io/gzk8v)
