@@ -23,6 +23,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Reporting publication integrity issues to publishers](https://osf.io/4edk2)
 * [Citations](https://osf.io/zpf4r)
 * [Citations to retracted publications](https://osf.io/9q3as)
+* [Formulaic research](https://osf.io/24dhu)
 * [Plagiarism of text](https://osf.io/ntcb4)
 * [Common dismissive responses to integrity concerns](https://osf.io/7w5ys)
 * [Suspicious venues](https://osf.io/vrk7e)
