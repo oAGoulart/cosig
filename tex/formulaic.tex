@@ -1,0 +1,165 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Formulaic research}
+\addcontentsline{toc}{section}{Formulaic research}
+\textit{Last updated: 17 May 2025}
+
+Many research fields have seen recent explosions in the number of articles performing what could be described as ``formulaic'' research. Such articles often follow a similar template and similar methods and are only differentiated by the exact variable, outcome, disease, subject, etc. that has been swapped in. This strain of research has been described as ``cut-and-paste research'' and \href{https://doi.org/10.1126/science.zgawnij}{``research Mad Libs\textregistered''}. 
+
+This guide describes several fields that have recently seen a large number of formulaic research articles published. Many are suspected to result from the activity of research paper mills, organizations that are known to sell authorship on mass-produced manuscripts.
+
+When evaluating any manuscript, some helpful questions to ask include:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Is the hypothesis well-justified?
+    \item Are the methodological specifics (e.g., inclusion/exclusion criteria) well-justified?
+    \item Does this work seem to resemble a previous work with only minor variations?
+    \item Does this work control for possible false discoveries (see COSIG's \href{https://osf.io/csxd5}{entry on multiple hypothesis correction})?
+\end{itemize}
+
+\subsection*{Example 1: Mendelian randomization studies}
+
+\href{https://doi.org/10.1038/s43586-021-00092-5}{Mendelian randomization (MR)} is an epidemiological method that leverages large-scale genetic databases like the \href{https://www.ukbiobank.ac.uk/}{UK Biobank} to study the causal relationship between an exposure (e.g., physical activity, drinking coffee, etc.) and an outcome (e.g., Alzheimer's disease, type II diabetes, etc.). Recently, many poor-quality \href{https://doi.org/10.1093/ije/dyx028}{two-sample MR (2SMR)} studies have been published, likely aided by the accessibility of large genetic databases and the availability of user-friendly interfaces for interacting with this data (e.g., the R packages \href{https://doi.org/10.7554/eLife.34408}{TwoSampleMR} and \href{https://doi.org/10.12688/wellcomeopenres.19995.2}{MendelianRandomization}). These studies often only report on a 2SMR study with no additional supporting evidence for an association and feature weakly-motivated hypothetical associations (such as an association between \href{http://dx.doi.org/10.3389/fendo.2024.1396032}{air pollution and non-alchoholic fatty liver disease} or \href{http://dx.doi.org/10.3390/nu15092091}{noodle consumption and metabolic syndrome}).
+
+\subsubsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://doi.org/10.1186/s12944-024-02284-w}{``Reclaiming mendelian randomization from the deluge of papers and misleading findings'' (2024)}
+    \item \href{https://doi.org/10.1136/egastro-2025-100187}{``Attention to the misuse of Mendelian randomisation in medical research'' (2025)}
+    \item \href{https://doi.org/10.1016/S2213-8587(23)00348-0}{``Mendelian randomisation at 20 years: how can it avoid hubris, while achieving more?'' (2024)}
+\end{itemize}
+
+\subsection*{Example 2: Associative research using National Health and Nutrition Examination Survey (NHANES) data}
+
+The \href{https://www.cdc.gov/nchs/nhanes/index.html}{National Health and Nutrition Examination Survey (NHANES)} is a survey of thousands of United States adults in children conducted annually since 1999 by the Centers for Disease Control and Prevention (CDC), who then make the data freely available. The data includes surveys, health exams and laboratory tests. Thousands of studies have been published analyzing NHANES data. However, recent years have seen a proliferation of studies performing formulaic single-factor analysis using NHANES data, often on unjustifiably small slices of the surveyed population and only over a limited number of years. For instance, \href{https://doi.org/10.3389/fendo.2023.1245199}{Nie et al. (2023)} analyze a hypothetical association between systematic immune-inflammation index and diabetes but only over the four years 2017 to 2020 while suitable data was available for the 21 years between 1999 and 2020.
+
+Many of these studies report on specious hypotheses with little statistical support. For instance, \href{https://doi.org/10.1186/s12888-023-04935-1}{Zhang et al. (2023)} report on an association between higher serum albumin concentration and depressive symptoms with an odds ratio of 0.98 (95\% confidence interval 0.95-0.99) and a p-value of 0.037.
+
+\subsubsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://doi.org/10.1371/journal.pbio.3003152}{``Explosion of formulaic research articles, including inappropriate study designs and false discoveries, based on the NHANES US national health database'' (2025)}
+\end{itemize}
+
+\subsection*{Example 3: Bibliometric analyses}
+
+\href{https://en.wikipedia.org/wiki/Bibliometrics}{Bibliometrics/scientometrics} is the quantitative study of indicators of knowledge transfer and development. One such indicator of knowledge transfer is citations between scientific articles. The number of citations an article has received is often used as a heuristic of that article's importance or quality and is a common analytical variable in bibliometric analyses. While high-quality \href{https://en.wikipedia.org/wiki/Metascience}{metascientific} research routinely uses such heuristics, the accessibility of bibliometric data through services like \href{https://scopus.com}{Scopus} and \href{/https://webofscience.com/}{Web of Science} makes it an easy target for low-quality, formulaic research articles. 
+
+For instance, thousands of articles have been published where the authors report on characteristics of the N highest-cited article in a particular field (e.g., \href{https://doi.org/10.1097/coa.0000000000000021}{``A Bibliometric Analysis of the 100 Most Cited Articles in Cornea'', 2023}, \href{https://doi.org/10.3389/fphar.2022.963032}{``A bibliometric analysis of the 100 most-cited articles on curcumin'', 2022}). Such articles often report summary statistics of these top-cited articles (such as describing the distribution of countries of origin), but more often than not without comparison to a control group or to all other articles in the field, giving these quantitative analyses little analytical value.
+
+Formulaic metascience articles can also report on author characteristics in any selected field of the scientific literature. For instance, \href{https://doi.org/10.7759/cureus.47208}{Djahanshahi et al. (2023)} report on gender trends among first authors in the scientific literature on \href{https://en.wikipedia.org/wiki/Wolff%E2%80%93Parkinson%E2%80%93White\_syndrome}{Wolff–Parkinson–White syndrome}, a rare heart disease for which fewer than 200 articles have been written. The authors' reasoning for selecting such a narrow field for analysis is unclear.
+
+\subsubsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://reeserichardson.blog/2024/12/30/recent-encounters-with-atom-thin-salami-slicing/}{``Recent encounters with atom-thin salami slicing: Case \#2: Same paper mill, same procedure, different subject, different authors'' (2024)}
+\end{itemize}
+
+\subsection*{Example 4: Querying a large language model}
+
+Since the public release of \href{https://en.wikipedia.org/wiki/ChatGPT}{ChatGPT} in 2022, thousands of \href{https://scholar.google.com/scholar?start=10&q="conversation+with+chatgpt"+OR+"interview+with+chatgpt"&hl=en}{``conversations'' and ``interviews'' with ChatGPT} have been published in peer-reviewed and non-peer-reviewed outlets. These commentary pieces can be written with little effort on practically any scientific topic. Many are severely limited in scope, typically only sharing a single chain of queries and outputs on a single topic, and do little to interrogate the veracity of the large language model's responses to the user's queries. Moreover, because the companies that develop these models publicly release new versions and quietly make updates between official versions, these conversations are typically not reproducible and any insights gained from them quickly obsolesce.
+
+\subsection*{Example 5: Non-coding RNAs}
+
+Many suspected paper mill products, especially those in the field of \href{https://en.wikipedia.org/wiki/Non-coding_RNA}{non-coding RNAs} and disease, resemble variations on a theme. Plausible-sounding papers can be generated by combining just about any non-coding gene with any human disease and any molecular pathway. This pattern can even be observed in article titles alone, as noted for a collection of papers dubbed the \href{https://scienceintegritydigest.com/2020/02/21/the-tadpole-paper-mill/}{``Tadpole paper mill''}.
+
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/formulaic/tadpole-template.jpg}
+    \caption*{Template structure for article titles from the Tadpole paper mill. Adapted from a \href{https://scienceintegritydigest.com/2020/02/21/the-tadpole-paper-mill/}{2020 blog post by Elisabeth Bik.}}
+\end{figure}
+
+These articles often feature strikingly similar templates, images and data re-used from other articles to refer to different experiments, non-functional reagents (see COSIG's \href{https://osf.io/2egvz}{entry on the subject}), experiments in misidentified and non-verifiable cell lines (see COSIG's \href{https://osf.io/d7we5}{entry on the subject}) and poorly-motivated hypotheses.
+
+\subsubsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://doi.org/10.1002/1873-3468.13201}{``Systematic fabrication of scientific images revealed'' (2018)}
+    \item \href{https://doi.org/10.1177/1177271919829162}{``The Possibility of Systematic Research Fraud Targeting Under-Studied Human Genes: Causes, Consequences, and Potential Solutions'' (2019)}
+    \item \href{https://doi.org/10.1002/1873-3468.13747}{``Digital magic, or the dark arts of the 21st century—how can journals and peer reviewers detect manuscripts and publications from paper mills?'' (2021)}
+    \item \href{https://scienceintegritydigest.com/2020/02/21/the-tadpole-paper-mill/}{Science Integrity Digest: ``The Tadpole Paper Mill'' (2020)}
+    \item \href{https://doi.org/10.1093/nar/gkac1139}{``Protection of the human gene research literature from contract cheating organizations known as research paper mills'' (2022)}
+
+\end{itemize}
+
+\subsection*{Example 6: Metaphor-based metaheuristics}
+
+\href{https://en.wikipedia.org/wiki/Metaheuristic}{Metaheuristics} are conceptual frameworks for developing optimization and search algorithms. Many metaheuristics are inspired by natural phenomena and processes. For instance, one of the most popularly-applied metaheuristic approaches is \href{https://en.wikipedia.org/wiki/Simulated_annealing}{simulated annealing}, a stochastic algorithm inspired by \href{https://en.wikipedia.org/wiki/Annealing_(materials_science)}{metallurgical annealing}. Other nature-inspired metaheuristics that have proven to be both popular and useful include \href{https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms}{ant colony optimization} and \href{https://en.wikipedia.org/wiki/Genetic_algorithm}{genetic algorithms}.
+
+Following on the popularity of these metaphor-based metaheuristics, recent years have seen thousands of articles published proposing new metaphor-based metaheuristics, particularly optimization algorithms based off of the behavior of animals. Many of these proposed methods are poorly-described and are of dubious generalizability and novelty. Often, the metaheuristic described is just which are poorly described and poorly motivated with dubious utility, generalizability and novelty. Often, the algorithm is highly similar to a well-established metaheuristic, just couched in language derived from a new metaphor. For instance, the popular \href{https://doi.org/10.1177/003754970107600201}{harmony search algorithm}, inspired by how jazz bands improvise, \href{https://doi.org/10.4018/978-1-4666-0270-0.ch005}{has been shown} to be equivalent to a special case of the well-established metaheuristic \href{https://en.wikipedia.org/wiki/Evolution_strategy}{evolutionary strategies}.
+
+The \href{https://fcampelo.github.io/EC-Bestiary/}{Evolutionary Computation Bestiary} has collected hundreds of articles proposing ``novel'' metaphor-based metaheuristics. These metaphors include the mating behavior of \href{https://doi.org/10.1007/978-981-13-3708-6_18}{barnacles}, \href{https://doi.org/10.1088/1757-899x/782/5/052028}{beetles} and \href{https://doi.org/10.1007/s00521-019-04464-7}{naked mole rats}, the growth of \href{https://doi.org/10.1016/j.asoc.2015.07.045}{tumors} and the organization of \href{http://dx.doi.org/10.4236/ijis.2014.41002}{soccer leagues}, even concepts like \href{https://doi.org/10.1109/CINTI.2010.5672231}{reincarnation} and \href{https://doi.org/10.1016/j.isatra.2014.03.018}{interior design}. Many such metaheuristic are trivial variations on the popular \href{https://en.wikipedia.org/wiki/Particle_swarm_optimization}{particle swarm optimization} method. As stated by \href{https://doi.org/10.1111/itor.12001}{S\"orensen}:
+
+\begin{quote}
+    \textit{...``novel'' metaheuristics based on new metaphors should be avoided if they cannot demonstrate a contribution to the field. To stress the point: renaming existing concepts does not count as a contribution. Even though methods may be called ``novel'' by their originator, many present no new ideas, except for the occasional marginal variant of an already existing method. Moreover, these methods take up the space of truly innovative ideas and research, for example in the analysis of existing heuristics. Because these methods invariably change the vocabulary, they are difficult to understand. Combined with the fact that the authors of these methods usually neglect to properly position ``their'' method in the metaheuristics literature, such methods present a loss of time and a step backward rather than forward.}
+\end{quote}
+
+\subsubsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://doi.org/10.48550/arXiv.1704.00853}{``A history of metaheuristics'' (2017)}
+    \item \href{https://doi.org/10.1111/itor.12001}{``Metaheuristics—the metaphor exposed'' (2013)}
+    \item \href{https://doi.org/10.1007/978-3-030-60376-2_10}{``Grey Wolf, Firefly and Bat Algorithms: Three Widespread Algorithms that Do Not Contain Any Novelty'' (2020)}
+    \item \href{https://doi.org/10.4018/978-1-4666-0270-0.ch005}{``A Rigorous Analysis of the Harmony Search Algorithm: How the Research Community can be Misled by a “Novel” Methodology'' (2012)}
+    \item \href{https://doi.org/10.1111/itor.13176}{``Exposing the grey wolf, moth-flame, whale, firefly, bat, and antlion algorithms: six misleading optimization techniques inspired by bestial metaphors'' (2022)}
+    \item \href{https://fcampelo.github.io/EC-Bestiary/}{The Evolutionary Computation Bestiary}
+\end{itemize}
+
+\end{document}

@@ -26,3 +26,5 @@ If including images in a guide, try to make the image files as small as possible
 
 If multiple terms are commonly used to refer to the same thing (e.g., [EDX/EDS/EDAX](https://osf.io/shfjy)), try to list as many as possible. Acronyms and initialisms should be written out in full the first time they are used.
 
+Guides should link to other guides where appropriate. Contributors should avoid creating multiple guides on closely-related topics and should condense guides wherever possible.
+
