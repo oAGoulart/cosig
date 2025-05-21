@@ -71,7 +71,7 @@ It is often difficult to tell if two line graphs have shared features from a pub
 An easy way to check if a figure in the PDF of a scientific article is in raster format or vector format is to try highlighting the text in the figure with your cursor (e.g. the text that labels the axes of the graph). If the text within the figure can be highlighted, the image is probably in vector format. Consider \href{https://doi.org/10.1007/s12182-020-00439-9}{this article}, for which the figures in the PDF are in vector format, and \href{https://doi.org/10.1016/j.est.2023.109227}{this article}, for which the images in the PDF are in raster format.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/vector_vs_raster.PNG}
+    \includegraphics[width=\textwidth]{img/vector/vector_vs_raster.png}
     \caption*{ The figure on the left is embedded within its PDF in vector format, whereas the image on the right is embedded within its PDF in raster format.}
 \end{figure}
 
@@ -80,7 +80,7 @@ Vector graphics can be isolated in any vector graphics editor like \href{https:/
 First, open Inkscape, navigate to \textbf{File > Open}, and select your PDF of interest. For this demonstration, we'll use Figure 1B in the PDF of \href{https://doi.org/10.1007/s12182-020-00439-9}{this article}. After the PDF opens, scroll over to your figure of interest and select your component of interest.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/in_inkscape.PNG}
+    \includegraphics[width=\textwidth]{img/vector/in_inkscape.png}
     \caption*{Our PDF opened in Inkscape with the traces in Figure 1B selected.}
 \end{figure}
 
@@ -88,7 +88,7 @@ First, open Inkscape, navigate to \textbf{File > Open}, and select your PDF of i
 Next, repeatedly use \textbf{Right click > Ungroup (Shift + Ctrl + G)} on the selected objects until individual objects (in this case, individual line traces) can be selected.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces.PNG}
+    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces.png}
     \caption*{After repeatedly ungrouping objects, we can now select individual line traces.}
 \end{figure}
 
@@ -96,7 +96,7 @@ Next, repeatedly use \textbf{Right click > Ungroup (Shift + Ctrl + G)} on the se
 When viewing line traces, it is helpful, but not necessary, to thin out the traces to enable comparison. To do so, navigate to \textbf{Objects > Fill and Stroke (Shift + Ctrl + F)}, under which the \textbf{Stroke Style} menu allows you to set line thickness. Afterwards, moving the traces to be closer to one another reveals that the F-2 (navy), F-4 (pink) and F-5 (green) traces are identical and the F-3 (blue) and F-1 (red) traces are identical.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces_thinned.PNG}
+    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces_thinned.png}
     \caption*{Moving around and thinning out traces in Inkscape allows for easier comparison.}
 \end{figure}
 
@@ -104,7 +104,7 @@ When viewing line traces, it is helpful, but not necessary, to thin out the trac
 We can also overlap the traces to make it crystal clear that these are the same data.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces_thinned_overlapping.PNG}
+    \includegraphics[width=\textwidth]{img/vector/in_inkscape_individual_traces_thinned_overlapping.png}
     \caption*{Now that traces are individual objects, we can easily overlap them to show that certain traces are identical.}
 \end{figure}
 
@@ -112,7 +112,7 @@ We can also overlap the traces to make it crystal clear that these are the same 
 Objects can also be copy-pasted into a new document.
 
 \begin{figure}[h!tbp]
-    \includegraphics[width=\textwidth]{img/vector/inkscape_new_document.PNG}
+    \includegraphics[width=\textwidth]{img/vector/inkscape_new_document.png}
     \caption*{ An individual trace copied into a new Inkscape document.}
 \end{figure}
 
