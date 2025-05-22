@@ -64,7 +64,7 @@
 
 \section*{Software for image forensics}
 \addcontentsline{toc}{section}{Software for image forensics}
-\textit{Last updated: 16 April 2025}
+\textit{Last updated: 22 May 2025}
 
 Publication integrity issues often arise from image integrity issues. Performing image forensics is often very useful for taking part in post-publication peer review, especially in fields that frequently use images in scientific articles (e.g., biomedicine).
 
@@ -74,23 +74,22 @@ Here are some factors to consider when using these tools:
 
 \begin{itemize}
     \setlength\itemsep{-0.5em}
-    \item \textbf{There can be false positives.} A tool may flag image features that, upon closer manual examination, do not actually indicate any image integrity issues.
-    \item \textbf{There can be false negatives.} A tool may not flag image features that are indicative of image integrity issues. For instance, software for detecting image duplications within a figure may miss some duplications that are visible by eye.
+    \item \textbf{There can be false positives.} A tool may flag image features that, upon closer manual examination, do not actually indicate any image integrity issues. Common acceptable instances of image duplication include the re-use of control Western blot panels or microscopy images (provided they are intended to represent the same experimental conditions) and control microscopy images. Images might also appear similar because they represent a time series and were taken in quick succession of one another.
+    \item \textbf{There can be false negatives.} A tool may not flag image features that are indicative of image integrity issues. For instance, software for detecting image duplications within a figure may miss some duplications that are visible by eye. Several tools are prone to missing image duplications in low-contrast images.
     \item \textbf{Tools may not examine all data types.} There can be entire categories of data (including image data) that have been explicitly excluded by the programmers of a tool because they are not yet comfortable with the sensitivity/specificity of their tool for that data type.
     \item \textbf{Analysis may not be reproducible.} Some of these services and software are updated frequently and the current version of a tool may not yield the same results as a previous version.
-    \item \textbf{Analysis of the same images in a different format may yield different results.} For example, if one uploads an entire PDF to a duplication detection tool, the tool may yield different results than if individual images are uploaded, even if the individual images and those in the PDF appear identical by eye. Figures in published articles will often be available in multiple resolutions, which can yield differing results. When performing image forensics, it is always preferable to work with the original, full-resolution, uncropped images provided by a study's authors.
-    \item \textbf{Tweaking parameters can yield differing results.} Some tools have sensitivity settings that can be changed by the user. Changing these setting may produce different results for the same images.
+    \item \textbf{Analysis of the same images in a different format may yield different results.} For example, if one uploads an entire PDF to a duplication detection tool, the tool may yield different results than if individual images are uploaded, even if the individual images and those in the PDF appear identical by eye. Figures in published articles will often be available in multiple resolutions, which can yield differing results. When performing image forensics, it is always preferable to work with the original, full-resolution, uncropped images provided by a study's authors. Images embedded in a PDF might be of higher or lower resolution than the individual images available for download from the publisher’s website. In some cases, if available, the \href{https://pmc.ncbi.nlm.nih.gov/}{PubMed Central} version of a paper offers much higher-resolution images than those found in the publisher’s versions. 
+    \item \textbf{Tweaking parameters can yield differing results.} Some tools have sensitivity settings that can be changed by the user. Changing these settings may produce different results for the same images.
     \item \textbf{Different tools do different things.} Not every tool described here has the same functionality or use cases as another tool. Another person without access to your tool of choice may not be able to reproduce your analysis.
 \end{itemize}
 
-\pagebreak
 \subsection*{Software/tools commonly used for image forensics in post-publication peer review:}
 
 \begin{itemize}
     \setlength\itemsep{-0.5em}
     \item \textbf{\href{https://www.adobe.com/products/photoshop.html}{Adobe Photoshop} (subscription-based)}. Photoshop is an image manipulation software that allows users to adjust color levels, adjust brightness and contrast, overlay images and annotate figures among myriad other features. The United States Department of Health and Human Service Office of Research Integrity provides \href{https://ori.hhs.gov/advanced-forensic-actions}{some toolkits} for image forensics with Photoshop. The International Association of Scientific, Technical and Medical Publishers (STM) Working Group on Image Integrity provides \href{https://stm-assoc.org/what-we-do/strategic-areas/research-integrity/image-integrity/resource-center/}{video tutorials} for investigating common image integrity issues with Photoshop.
     \item \textbf{\href{https://www.figcheck.com/imagecheck}{Figcheck} (subscription-based, limited free use)}. Figcheck is a browser-based service that detects within-document image duplication. Each user is limited to uploading 10 images a day.
-    \item \textbf{\href{https://29a.ch/photo-forensics/}{Forensically} (free to use)}. Forensically is a browser-based service that offers several tools for image forensics, such as clone detection and levels adjustment.
+    \item \textbf{\href{https://29a.ch/photo-forensics/}{Forensically} (free to use)}. Forensically is a browser-based service that offers several tools for image forensics, such as clone detection and levels adjustment. Forensically can only detect duplications within a single image and only if they are in the exact same orientation and magnification factor.
     \item \textbf{\href{https://fotoforensics.com/}{FotoForensics} (free to use)}. FotoForensics is a browser-based service that offers several tools for image forensics, such as \href{https://en.wikipedia.org/wiki/Error_level_analysis}{error level analysis} and metadata inspection.
     \item \textbf{\href{https://www.gimp.org/}{GIMP (the GNU Image Manipulation Program)} (free to use and open-source)}. GIMP is a image manipulation software with most of the same features and functionality as Photoshop but is free to use (and modify).
     \item \textbf{\href{https://www.google.com/?olud=}{Google Lens} (free to use)}. Google Lens is an extension of the Google search engine that allows users to upload an image and finding matching and visually-similar images across the web.

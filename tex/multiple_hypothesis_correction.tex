@@ -64,9 +64,9 @@
 
 \section*{Multiple hypothesis correction}
 \addcontentsline{toc}{section}{Multiple hypothesis correction}
-\textit{Last updated: 13 May 2025}
+\textit{Last updated: 22 May 2025}
 
-Scientific studies frequently involve \href{https://www.britannica.com/science/statistics/Hypothesis-testing}{statistical hypothesis testing}. For instance, scientists might test \href{https://doi.org/10.1038/s41598-023-49623-y}{whether birds from one region have longer beaks than birds from a different region}. For such a test, the null hypothesis ($H_0$) would probably be that the two populations have the same beak length and the alternative hypothesis ($H_a$) would be that the two populations have different beak lengths. By sampling individuals from both populations, measuring their beak lengths and comparing the beak lengths using a \href{https://en.wikipedia.org/wiki/Student%27s_t-test}{two-sample $t$-test}, these scientists can determine if there is sufficient statistical evidence to reject the null hypothesis. 
+Scientific studies frequently involve \href{https://www.britannica.com/science/statistics/Hypothesis-testing}{statistical hypothesis testing}. For instance, scientists might test \href{https://doi.org/10.1038/s41598-023-49623-y}{whether birds from one region have longer beaks than birds from a different region}. For such a test, the null hypothesis ($H_0$) would probably be that there is no difference in beak length between the two populations and the alternative hypothesis ($H_a$) would be that their is a difference in beak length. By sampling individuals from both populations, measuring their beak lengths and comparing the beak lengths using a \href{https://en.wikipedia.org/wiki/Student%27s_t-test}{two-sample $t$-test}, these scientists can determine if there is sufficient statistical evidence to reject the null hypothesis. 
 
 Usually, this is done by comparing a test's $p$ value to a signficance threshold $\alpha$. The $p$ value represents the probability of finding a statistical result as extreme as what was observed if the null hypothesis were indeed true (e.g., the probability of measuring the two different sampled means of beak length if the average beak lengths in the underlying populations were actually the same). Only rejecting the null hypothesis if $p < \alpha$ ensures that, for any given test, the probability of rejecting a true null hypothesis is less than $\alpha$. The most commonly-used $\alpha$ is $0.05$.
 
@@ -74,7 +74,7 @@ When testing a single hypothesis, you can usually rely on the unadjusted $p$ val
 
 Consider a differential expression analysis experiment on 10,000 genes, none of which actually differ in their underlying expression levels for the two groups (i.e., the null hypothesis is true for all 10,000 genes). If changes in gene expression for each gene were determined using an unadjusted $p$ value below a threshold of $\alpha = 0.05$, then the null hypothesis would be rejected for around 500 genes, all of which would be false positives, also known as \href{https://en.wikipedia.org/wiki/Type_I_and_type_II_errors}{Type I errors}). To limit the number of false positives in an experiment like this, scientists will often use a multiple hypothesis correction procedure. This guide covers two of the most popular methods for multiple hypothesis correction, Bonferroni correction and Benjamini-Hochberg correction. Both methods will lower the threshold at which significance is called, decreasing the false positive rate (the rate at which correct null hypotheses are rejected) at the expense of increasing the false negative rate (the rate at which the null hypothesis is not rejected when the alternative hypothesis is true).
 
-A lack of multiple hypothesis correction leaves an experiment's results susceptible to over-interpretation. 
+Experts are generally more concerned with mitigating false positives (i.e., false discoveries) than mitigating false negatives (i.e., ``missing something''), especially in certain fields (e.g., healthcare). A lack of multiple hypothesis correction leaves an experiment's results susceptible to over-interpretation.
 
 \subsection*{Bonferroni correction}
 

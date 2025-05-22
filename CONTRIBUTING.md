@@ -30,3 +30,10 @@ Guides should link to other guides where appropriate. Contributors should avoid 
 
 The "Last updated" date at the start of a guide should reflect the last date of *any change* to the guide, including copy-editing changes. The "Last updated" date for COSIG as a whole should be equivalent to the most recent "Last updated" date for all guides.
 
+Figures and tables should appear on the page immediately after the corresponding text section. This may require some `\pagebreak` commands to coax LaTeX into compiling correctly.
+
+# Preferred terminology
+
+Try to use "article" when referring to scientific publications and "manuscript" when referring to papers that have been prepared or submitted but are not yet published.
+
+Usually, the most accurate and most neutral way to describe problems in an article is "problematic", as opposed to "fraudulent", "bogus", "fake", etc.

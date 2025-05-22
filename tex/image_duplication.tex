@@ -51,7 +51,7 @@
 
 \section*{Image duplication}
 \addcontentsline{toc}{section}{Image duplication}
-\textit{Last updated: 17 April 2025}
+\textit{Last updated: 22 May 2025}
 
 Image duplication is one of the most frequently spotted integrity issues in scientific publications. This term is generally used to describe instances where two images (or parts of an image) are supposed to represent different things but are actually identical.
 
@@ -59,22 +59,28 @@ Image duplication is one of the most frequently spotted integrity issues in scie
 
 \subsection*{Type I: Simple duplication}
 
-This describes when the same image has been used multiple times in an article to represent different experiments or samples. Sometimes, the same image is used multiple times in an article to represent the same experiment, which is usually not considered problematic.
+This describes when the same image has been used multiple times to represent different experiments or samples. Sometimes, the same image is used multiple times in an article to represent the same experiment, which is usually not considered problematic.
 
 \subsection*{Type II: Duplication with repositioning}
 
-This describes when the same image has been used multiple times in an article to represent different experiments or samples, but in one or more of these instances the image has been cropped, rotated, flipped or otherwise repositioned.
+This describes when the same image has been used multiple times to represent different experiments or samples, but in one or more of these instances the image has been cropped, rotated, flipped or otherwise repositioned.
 
 \subsection*{Type III: Duplication with alteration} 
 
-This describes when the same image has been used multiple times in an article to represent different experiments or samples, but one or more instances of this image have been altered relative to the others via the addition or subtraction of certain features. This category also covers duplicated regions within a single image shown in 
+This describes when the same image has been used multiple times, but one or more instances of this image have been altered relative to the others via the addition or subtraction of certain features. This category also covers duplicated regions within a single image shown in 
 an article.
 
 Among the above categories, Type I is considered the least severe (and most likely to be the result of an error during figure preparation) while Type III is considered the most severe (and most likely to be the result of deliberate image manipulation). 
 
-As noted by \href{https://doi.org/10.1017/jme.2025.32}{Brookes (2025)}, images can also be duplicated between different articles. In these cases, it is problematic when these images are supposed to represent different experiments or have not been properly attributed to the original authors that collected or published the image.
+As noted by \href{https://doi.org/10.1017/jme.2025.32}{Brookes (2025)}, Type I, II and III duplications can occur within an article as well as between different articles. In cases where an image has been re-used in multiple articles, it is problematic when these images are supposed to represent different experiments or have not been properly attributed to the original authors that collected or published the image.
+
+\subsection*{Tools for detecting duplications}
+
+Several software tools have been developed to help the user find image duplications within or between figures. These are described separately in COSIG's entry \href{https://osf.io/g23pf}{on software for image forensics}.
 
 \subsection*{Common false positives}
+
+There is a difference between appropriate and inappropriate image duplications. Not all duplications that might be spotted by eye or flagged by image forensics software might be inappropriate. For example, image panels representing control samples (e.g., loading controls in Western blots, untreated mice, etc) might be used multiple times within the same article. If those images represent the same experimental conditions, this is not considered a problem. 
 
 Review articles will often republish images used in previous articles. This is only problematic if the review article misrepresents the image being used or does not properly attribute it to its original source.
 
@@ -84,19 +90,24 @@ The different channels in \href{https://en.wikipedia.org/wiki/Fluorescence_micro
 
 \subsection*{Annotating image duplications}
 
-When reporting observations of image duplications on PubPeer or to journal editors, it is often useful to illustrate exactly which images / regions are apparently duplicated. This is often accomplished by overlaying colored boxes on the image (as shown in the examples below) where each color corresponds to a different set of shared image features. These annotations are usually performed in software like \href{https://www.microsoft.com/en-us/windows/paint}{Microsoft Paint}, \href{https://www.gimp.org/}{GIMP} or \href{https://www.microsoft.com/en-us/microsoft-365/powerpoint}{Microsoft PowerPoint}. 
+When reporting observations of image duplications on PubPeer or to journal editors, it is often useful to illustrate exactly which images / regions are apparently duplicated. This is often accomplished by overlaying colored boxes on the image (as shown in the examples below) where each color corresponds to a different set of shared image features. These annotations are usually performed in software like \href{https://www.microsoft.com/en-us/windows/paint}{Microsoft Paint}, \href{https://www.gimp.org/}{GIMP}, \href{https://www.microsoft.com/en-us/microsoft-365/powerpoint}{Microsoft PowerPoint} or \href{https://support.apple.com/guide/preview/welcome/mac}{Preview (for Mac)}. 
 
 If annotating an article with many apparent duplications, you may find yourself running out of unique colors to use. Using too many colors can make annotations difficult to interpret. Strive for readability when annotating images -- it is often useful to show the original image alongside the annotated image.
-
-\begin{figure}[h!tbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{img/image_duplication/Bakhsheshi-Rad_annotation.JPG}
-    \caption*{An original set of published images of cell culture (left) versus an annotated version of these images showing regions of unusually high similarity (right). Adapted from Figure 4C of \href{https://doi.org/10.1016/j.polymertesting.2019.106298}{Bakhsheshi-Rad et al. (2020)}.}
-\end{figure}
 
 For Type II and Type III duplications that involve rotation or flipping, it is often useful to attach a small symbol to each of the boxes to make it more apparent what transformation occurred, such as a small diagonal line on the side of the box. 
 
 A PowerPoint template containing several pre-made boxes and symbols for annotating images is \href{https://osf.io/w3epj}{available here}.
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/image_duplication/xue_fig_9_small.png}
+    \caption*{An annotated figure showing Type II image duplications between panels. Note that a small diagonal line is affixed to each of these boxes to make their relative rotation and flipping more apparent. Adapted from Figure 9 of \href{https://doi.org/10.1002/adhm.201700630}{Xue et al. (2017)} by \href{https://pubpeer.com/publications/C47278BACD8304A719E502DF7041A5\#1}{Elisabeth Bik on PubPeer}.}
+\end{figure}
+
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/image_duplication/Bakhsheshi-Rad_annotation.JPG}
+    \caption*{An original set of published images of cell culture (left) versus an annotated version of these images showing regions of unusually high similarity (right). Adapted from Figure 4C of \href{https://doi.org/10.1016/j.polymertesting.2019.106298}{Bakhsheshi-Rad et al. (2020)} by \href{https://pubpeer.com/publications/60A225978670EFD93446CAC5696F7F\#1}{Reese Richardson on PubPeer}. This represents a Type III duplication. Note also that some of the boxed regions (e.g., the cyan boxes) are unusually similar, but not exactly identical to one another.}
+\end{figure}
 
 \subsection*{Example 1: Type I duplication}
 
@@ -139,7 +150,7 @@ Morrison et al. also provide histopathological images of implanted tumors. One i
 \begin{figure}[h!tbp]
     \centering
     \includegraphics[width=\textwidth]{img/image_duplication/image-1741998932949.jpg}
-    \caption*{\href{https://doi.org/10.3390/ph16070925}{Badr et al. (2023)} uses a scanning electron microscope image to represent itopride hydrochloride. The same image was previously used by \href{https://doi.org/10.2147/ijn.s77731}{Kurakala et al. (2015)} to represent chitosan. Note that the two images are accompanied by inconsistent scale bars (the scale bar in the Kurakala et al. image suggests particles one thousand times larger than that shown by Badr et al.). The image shown by Badr et al. has been cropped and rotated 180 degrees relative to the image shown by Kurakala et al. The shared region is shown with red boxes (note that a small diagonal line is affixed to each of these boxes to make their relative rotation more apparent). Adapted from Badr et al. and Kurakala et al. by \href{https://pubpeer.com/publications/30DDCFCF4925C0DD401AA9810AC0A3}{Reese Richardson on PubPeer}.}
+    \caption*{\href{https://doi.org/10.3390/ph16070925}{Badr et al. (2023)} uses a scanning electron microscope image to represent itopride hydrochloride. The same image was previously used by \href{https://doi.org/10.2147/ijn.s77731}{Kurakala et al. (2015)} to represent chitosan. Note that the two images are accompanied by inconsistent scale bars (the scale bar in the Kurakala et al. image suggests particles one thousand times larger than that shown by Badr et al.). The image shown by Badr et al. has been cropped and rotated 180 degrees relative to the image shown by Kurakala et al. The shared region is shown with red boxes. Note that a small diagonal line is affixed to each of these boxes to make their relative rotation more apparent. Adapted from Badr et al. and Kurakala et al. by \href{https://pubpeer.com/publications/30DDCFCF4925C0DD401AA9810AC0A3}{Reese Richardson on PubPeer}.}
 \end{figure}
 
 \pagebreak
@@ -156,7 +167,7 @@ Morrison et al. also provide histopathological images of implanted tumors. One i
 
 \pagebreak
 
-\subsection*{Example 6: False positive, merged fluorescence microscopy image, no image duplication}
+\subsection*{Example 6: False positive, merged fluorescence microscopy image, no problematic image duplication}
 
 \href{https://doi.org/10.1371/journal.pone.0083018}{Lepore et al. (2013)} use fluorescence microscopy to visualize protein localization within individual cells. As is conventional for this type of data, they represent their fluorescence microscopy images as separate images for each channel (green and blue) as well as an image that merges both channels. The merged image appears similar to the images with separated channels because it represents the exact same data. Thus, there is no problematic image duplication here.
 
@@ -166,6 +177,17 @@ Morrison et al. also provide histopathological images of implanted tumors. One i
     \caption*{Fluorescence microscopy images where each row contains an image showing the DAPI (blue, left) channel, the $\omega$1-bioTag (green, center) channel and a merged channel (right). Adapted from Figure 6D of \href{https://doi.org/10.1371/journal.pone.0083018}{Lepore et al. (2013)}.}
 \end{figure}
 
+\pagebreak
+
+\subsection*{Example 7: False positive, re-used control Western blot panel}
+
+\href{https://doi.org/10.1038/ni.1876}{Yang et al. (2010)} report on chromatin immunoprecipitation (ChIP) experiments using Western blots. In Figure 6D, they compare three different outputs to the same set of control bands, re-using the image of the control bands three times. This may appear like a problematic Type I image duplication, but this image is being re-used to represent the same experiments.
+
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/image_duplication/yang_fig_6d.png}
+    \caption*{Note that the ``Input'' band images shown for each subpanel are identical. Because these are supposed to represent the same experiment, this is not a problem. However, for this kind of figure, the p300, H3Ac and H4Ac blot panels would usually be displayed together in the same stacked panel. Adapted from Figure 6D of \href{https://doi.org/10.1038/ni.1876}{Yang et al. (2010)}.}
+\end{figure}
 
 \subsection*{Additional resources}
 
