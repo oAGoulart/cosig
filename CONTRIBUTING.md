@@ -22,7 +22,7 @@ For highly specialized guides (e.g., [verifying nucleotide sequence reagents](ht
 
 Text and graphics that are lifted from other sources should be appropriately attributed with a direct link (e.g., "Adapted from Figure S1 of [Zhang et al. (2023)](https://doi.org/10.1073/pnas.2302491120)"). 
 
-If including images in a guide, try to make the image files as small as possible to reduce the PDF file size. Consider using \href{https://advsys.net/ken/utils.htm}{PNGOUT} to losslessly compress .png figures. Wherever possible, use .pdf format for graphs.
+If including images in a guide, try to make the image files as small as possible to reduce the PDF file size. Consider using [PNGOUT](https://advsys.net/ken/utils.htm) to losslessly compress .png figures. Wherever possible, use .pdf format for graphs.
 
 If multiple terms are commonly used to refer to the same thing (e.g., [EDX/EDS/EDAX](https://osf.io/shfjy)), try to list as many as possible. Acronyms and initialisms should be written out in full the first time they are used.
 
