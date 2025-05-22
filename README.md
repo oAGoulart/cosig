@@ -59,27 +59,27 @@ Except where otherwise indicated, all material in COSIG is available under a [CC
 #### APA style citation
 
 ```  
-(2024, October 21). Collection of Open Science Integrity Guides. Retrieved from osf.io/2kdez  
+(2025, June 4). Collection of Open Science Integrity Guides. Retrieved from https://doi.org/10.17605/OSF.IO/2KDEZ
 ```
 
 #### MLA style citation
 
 ```  
-“Collection of Open Science Integrity Guides.” OSF, 21 Oct. 2024. Web. 
+“Collection of Open Science Integrity Guides.” OSF, 4 June 2025. Web. 
 ```
 
 #### Chicago style citation
 
 ```
-2024. “Collection of Open Science Integrity Guides.” OSF. October 21. osf.io/2kdez. 
+2025. “Collection of Open Science Integrity Guides.” OSF. June 5. https://doi.org/10.17605/OSF.IO/2KDEZ. 
 ```
 #### BibTeX entry
 ```
 @misc{cosig,
   title={Collection of Open Science Integrity Guides},
-  url={osf.io/2kdez},
+  url={https://doi.org/10.17605/OSF.IO/2KDEZ},
   publisher={OSF},
-  year={2024},
-  month={Oct}
+  year={2025},
+  month={June}
 }
 ```
