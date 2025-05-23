@@ -34,6 +34,9 @@ Figures and tables should appear on the page immediately after the corresponding
 
 # Preferred terminology
 
+Use "venue" when referring to anywhere papers are published are published to encompass journals, conferences, and workshops, since different fields have different expectations in terms of what should be published where.
+Only use a specific kind of venue when advice is truly specific to that venue, or when noting an exception such as workshop papers typically being shorted which can influence some red or green flags.
+
 Try to use "article" when referring to scientific publications and "manuscript" when referring to papers that have been prepared or submitted but are not yet published.
 
 Usually, the most accurate and most neutral way to describe problems in an article is "problematic", as opposed to "fraudulent", "bogus", "fake", etc.
