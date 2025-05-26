@@ -64,17 +64,23 @@
 
 \section*{Multiple hypothesis correction}
 \addcontentsline{toc}{section}{Multiple hypothesis correction}
-\textit{Last updated: 22 May 2025}
+\textit{Last updated: 26 May 2025}
 
-Scientific studies frequently involve \href{https://www.britannica.com/science/statistics/Hypothesis-testing}{statistical hypothesis testing}. For instance, scientists might test \href{https://doi.org/10.1038/s41598-023-49623-y}{whether birds from one region have longer beaks than birds from a different region}. For such a test, the null hypothesis ($H_0$) would probably be that there is no difference in beak length between the two populations and the alternative hypothesis ($H_a$) would be that their is a difference in beak length. By sampling individuals from both populations, measuring their beak lengths and comparing the beak lengths using a \href{https://en.wikipedia.org/wiki/Student%27s_t-test}{two-sample $t$-test}, these scientists can determine if there is sufficient statistical evidence to reject the null hypothesis. 
+Scientific studies frequently involve \href{https://www.britannica.com/science/statistics/Hypothesis-testing}{statistical hypothesis testing}. For instance, scientists might test \href{https://doi.org/10.1038/s41598-023-49623-y}{whether birds from one region have longer beaks than birds from a different region}. For such a test, the null hypothesis ($H_0$) would probably be that there is no difference in beak length between the two populations and the alternative hypothesis ($H_a$) would be that there is a difference in beak length. By sampling individuals from both populations, measuring their beak lengths and comparing the beak lengths using a \href{https://en.wikipedia.org/wiki/Student%27s_t-test}{two-sample $t$-test}, these scientists can determine if there is sufficient statistical evidence to reject the null hypothesis. 
 
 Usually, this is done by comparing a test's $p$ value to a signficance threshold $\alpha$. The $p$ value represents the probability of finding a statistical result as extreme as what was observed if the null hypothesis were indeed true (e.g., the probability of measuring the two different sampled means of beak length if the average beak lengths in the underlying populations were actually the same). Only rejecting the null hypothesis if $p < \alpha$ ensures that, for any given test, the probability of rejecting a true null hypothesis is less than $\alpha$. The most commonly-used $\alpha$ is $0.05$.
 
 When testing a single hypothesis, you can usually rely on the unadjusted $p$ value of your statistical test to tell you whether or not you should reject your null hypothesis. However, many studies test many hypotheses at once. For instance, a study performing \href{https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/differential-gene-expression-analysis/#:~:text=Differential%20expression%20analysis%20means%20taking,expression%20levels%20between%20experimental%20groups}{differential expression analysis} on RNA sequencing data will test whether gene expression levels differ between a control group and a treatment group for thousands of genes at once. For experiments testing many hypotheses, it is useful to adjust these tests' $p$ values to prevent over-interpretation of results.
 
-Consider a differential expression analysis experiment on 10,000 genes, none of which actually differ in their underlying expression levels for the two groups (i.e., the null hypothesis is true for all 10,000 genes). If changes in gene expression for each gene were determined using an unadjusted $p$ value below a threshold of $\alpha = 0.05$, then the null hypothesis would be rejected for around 500 genes, all of which would be false positives, also known as \href{https://en.wikipedia.org/wiki/Type_I_and_type_II_errors}{Type I errors}). To limit the number of false positives in an experiment like this, scientists will often use a multiple hypothesis correction procedure. This guide covers two of the most popular methods for multiple hypothesis correction, Bonferroni correction and Benjamini-Hochberg correction. Both methods will lower the threshold at which significance is called, decreasing the false positive rate (the rate at which correct null hypotheses are rejected) at the expense of increasing the false negative rate (the rate at which the null hypothesis is not rejected when the alternative hypothesis is true).
+Consider a differential expression analysis experiment on 10,000 genes, none of which actually differ in their underlying expression levels for the two groups (i.e., the null hypothesis is true for all 10,000 genes). If changes in gene expression for each gene were determined using an unadjusted $p$ value below a threshold of $\alpha = 0.05$, then the null hypothesis would be rejected for around 500 genes, all of which would be false positives, also known as \href{https://en.wikipedia.org/wiki/Type_I_and_type_II_errors}{Type I errors}). To limit the number of false positives in an experiment like this, scientists will often use a multiple hypothesis correction procedure. This guide covers three methods for multiple hypothesis correction: Bonferroni correction, Benjamini-Hochberg correction and Benjamini-Yekutieli correction. These methods all lower the threshold at which significance is called, decreasing the false positive rate (the rate at which correct null hypotheses are rejected) at the expense of increasing the false negative rate (the rate at which the null hypothesis is not rejected when the alternative hypothesis is true).
 
 Experts are generally more concerned with mitigating false positives (i.e., false discoveries) than mitigating false negatives (i.e., ``missing something''), especially in certain fields (e.g., healthcare). A lack of multiple hypothesis correction leaves an experiment's results susceptible to over-interpretation.
+
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/multiple_hypothesis_correction/fdr_diagram.png}
+    \caption*{All statistical tests must strike a balance between how effective they are at detecting real effects and how likely they are to make false discoveries. Statisticians limit the prevalence of false discoveries by applying multiple hypothesis correction.}
+\end{figure}
 
 \subsection*{Bonferroni correction}
 
@@ -101,11 +107,23 @@ A set of $p$ values can be Benjamini-Hochberg-adjusted by multiplying each $p_i$
 
 The $q$ value of any test is the minimum FDR that can be attained across all tests if that value is called significant.
 
+\subsection*{Benajmini-Yekutieli correction}
+
+The Benjamini-Hochberg procedure described above assumes that all the tests being performed are independent or only weakly dependent. This assumption is often not the case, especially for certain types of data. For instance, in \href{https://en.wikipedia.org/wiki/Metabolomics}{metabolomics}, the abundance level of certain metabolites will be heavily correlated with one another because they originate from or are metabolized by the same pathways. Similarly, in RNA sequencing experiments, the expression levels of particular genes are often very heavily correlated because of regulatory relationship between these genes. As a result, many tests in an RNA-seq differential expression analysis will not be truly independent of one another. In such cases, if a false discovery is made on one test, variables and tests positively correlated with that test are also more likely to result in false discoveries.
+
+The \href{https://doi.org/10.1214%2Faos%2F1013699998}{Benjamini–Yekutieli procedure} is a modification of the Benjamini–Hochberg method designed for controlling the FDR under arbitary assumptions of independence between tests. It introduces an additional adjustment factor to the Benjamini-Hochberg method such that the null hypothesis for test $i$ with $p$ value $p_i$ is only rejected if
+$$p_i \leq \frac{r_i * \alpha}{m*c(m)}$$
+where $c(m)$ is the \href{https://en.wikipedia.org/wiki/Harmonic_number}{harmonic number}, i.e.,
+$$c(m) = \sum_{k=1}^m \frac{1}{k}.$$
+For large $m$, this is approximated well by
+$$c(m) \approx \ln(m) + 0.577.$$
+This adjustment factor makes the criterion for significance slightly more stringent. Thus, the Benjamini-Yekutieli procedure is more conservative than Benjamini-Hochberg. Benjamini-Yekutieli is used less frequently than Bonferroni and Benjamini-Hochberg correction, but for datasets that are very highly correlated it is the more appropriate measure to use, even if it does reduce the power among a series of tests.
+
 \subsection*{Example 1: Lack of multiple hypothesis correction, incorrect Benjamini-Hochberg calculation}
 
 \href{https://doi.org/10.1073/pnas.2022857118}{Teruya et al. (2021)} report on performing whole-blood metabolomics to determine if there are any metabolites that are present at different abundance in the blood of dementia patients versus elderly controls. They perform hypothesis testing on 124 metabolites, finding 33 out of 124 to be significant at unadjusted $p < 0.05$. Using an unadjusted $p$ value to determine significance instead of using multiple hypothesis correction in this case likely means that the majority of what the authors call significantly-different ``dementia-linked markers'' are actually false positives.
 
-If Benjamini-Hochberg correction was used and significance was called at $q < 0.05$, only 8 metabolites would be called as significant. The authors did perform Benjmanini-Hochberg multiple-hypothesis correction, but incorrectly. To compute $q$ values with this procedure, one would rank the $p$ values of the multiple tests from lowest (in this case, 1) to highest (in this case, 124), multiply each $p$ value by its rank, then divide each product by the number of tests performed (124). However, Table S2 shows that each product was instead divided by the number of tests called significant at $p < 0.05$ (33). Further, the calculation was only performed for those tests passing at this significance threshold.
+If Benjamini-Hochberg correction was used and significance was called at $q < 0.05$, only eight metabolites would be called as significant. The authors did perform Benjmanini-Hochberg multiple-hypothesis correction, but incorrectly. To compute $q$ values with this procedure, one would rank the $p$ values of the multiple tests from lowest (in this case, 1) to highest (in this case, 124), multiply each $p$ value by its rank, then divide each product by the number of tests performed (124). However, Table S2 shows that each product was instead divided by the number of tests called significant at $p < 0.05$ (33). Further, the calculation was only performed for those tests passing at this significance threshold.
 
 This article has \href{https://doi.org/10.1073/pnas.2419538121}{since been corrected} to address this mistake. However, the authors still use unadjusted $p$ values to call for significantly different metabolites. This is especially problematic since there were only eight subjects per group, as \href{https://doi.org/10.1073/pnas.2118654119}{noted by others}.
 
@@ -113,7 +131,7 @@ This article has \href{https://doi.org/10.1073/pnas.2419538121}{since been corre
 
 \begin{figure}[h!tbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{img/multiple_hypothesis_correction/image-1715611965675.png}
+    \includegraphics[width=0.7\textwidth]{img/multiple_hypothesis_correction/image-1715611965675.png}
     \caption*{The original Table S2 of \href{https://doi.org/10.1073/pnas.2022857118}{Teruya et al. (2021)}, which features incorrectly-calculated $q$ values.}
 \end{figure}
 
@@ -139,6 +157,7 @@ However, the $q$ values shown in Table S3 do not increase monotonically with the
     \item \href{https://doi.org/10.1378/chest.11-0523}{``Correction for multiple testing: is there a resolution?'' (2011)}
     \item \href{https://doi.org/10.1038/nbt1209-1135}{``How does multiple testing correction work?'' (2010)}
     \item \href{https://doi.org/10.4045/tidsskr.21.0357}{``Adjustment of p-values for multiple hypotheses'' (2021, available in Norwegian and English)}
+    \item \href{https://bookdown.org/mike/data_analysis/sec-false-discovery-rate.html}{``A Guide on Data Analysis'' (2020): ``False Discovery Rate''}
 \end{itemize}
 
 \end{document}
