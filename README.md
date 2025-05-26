@@ -7,7 +7,7 @@
 
 However, investigating the integrity of the published scientific literature often requires domain-specific knowledge that not everyone will have. This open source project is a collection of guides written and maintained by publication integrity experts to distribute this domain-specific knowledge so that others can participate in post-publication peer review.
 
-COSIG currently hosts 25 guides and was last updated on 26 May 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
+COSIG currently hosts 26 guides and was last updated on 26 May 2025. Guides can be downloaded as [individual PDFs](https://osf.io/2kdez/files/osfstorage). A combined PDF with all guides included can be downloaded [here](https://osf.io/ynb8j).
 
 Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's GitHub repo](https://github.com/cosig-pppr/cosig/issues) or by emailing [admin@cosig.net](mailto:admin@cosig.net). Before contributing, read COSIG's [Contributing](https://github.com/cosig-pppr/cosig/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/cosig-pppr/cosig/blob/main/CODE_OF_CONDUCT.md) pages.
 
@@ -19,6 +19,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Extracting vector graphics from a PDF](https://osf.io/n8fvw)
 * [The vertical line test](https://osf.io/e3nfr)
 * [Image duplication](https://osf.io/547re)
+* [Image compression artifacts](https://osf.io/e5vzr)
 * [Software for image forensics](https://osf.io/g23pf)
 * [Reporting publication integrity issues to publishers](https://osf.io/4edk2)
 * [Citations](https://osf.io/zpf4r)

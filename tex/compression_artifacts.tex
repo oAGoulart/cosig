@@ -49,61 +49,25 @@
 \flushleft
 \includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
 
-\section*{Example title}
-\addcontentsline{toc}{section}{Example title}
-\textit{Last updated: X Month 20XX}
+\section*{Image compression artifacts}
+\addcontentsline{toc}{section}{Image compression artifacts}
+\textit{Last updated: 26 May 2025}
 
-This is a template for new guides to be added to COSIG.
-
-\subsection*{Example section heading}
-
-\begin{figure}[h!tbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{img/home/chinese_giant_salamander.jpg}
-    \caption*{Example of a figure. Image available \href{https://commons.wikimedia.org/wiki/File:Velemlok_\%C4\%8D\%C3\%ADnsk\%C3\%BD_zoo_praha_1.jpg}{here}.}
-\end{figure}
+Image files are often \href{https://en.wikipedia.org/wiki/Data_compression}{compressed} to take up less disk space. Lossy compression algorithms like \href{https://en.wikipedia.org/wiki/JPEG}{JPEG} often leave visual artifacts in the compressed image, including:
 
 \begin{itemize}
     \setlength\itemsep{-0.5em}
-    \item bullet
-    \item point
-    \item list
+    \item \textbf{``Blocks'' appearing in the image.} These blocks appear as sharp vertical and horizontal transitions and are introduced by JPEG's application of the \href{https://en.wikipedia.org/wiki/Discrete_cosine_transform}{discrete cosine transform} algorithm. These blocks can appear superficially similar to ``splicing'' artifacts indicative of image manipulation (see COSIG's \href{https://osf.io/547re}{entry on image duplication}).
+    \item \textbf{\href{https://en.wikipedia.org/wiki/Ringing_artifacts}{``Ringing''} artifacts around sharp transitions in the image.} These artifacts are especially apparent surrounding graphs and text.
+    \item \textbf{Distortion of colors and introduction of new colors into an image.}
 \end{itemize}
 
-\begin{enumerate}
-    \setlength\itemsep{-0.5em}
-    \item numbered
-    \item list
-\end{enumerate}
+\begin{figure}[h!tbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/compression_artifacts/image_compression_fig_small.png}
+    \caption*{The same figure (original on left) subjected to moderate JPEG compression (middle, Q=10) and heavy JPEG compression (right, Q=0). Various compression artifacts are highlighted with red boxes below the figure.}
+\end{figure}
 
-\pagebreak
-
-\begin{center}
-\begin{tabular}{|p{3.0cm}|p{3.0cm}|p{3.0cm}|}
-\hline
-     A & B & C\\ \hline\hline
-     1 & 2 & 3\\\hline
-     $\alpha$ & $\beta$ & $\gamma$\\ \hline
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{l|ccc}
-& \multicolumn{3}{c}{predicted class} \\
-true class & lemon & orange & tangerine \\
-\hline
-lemon & 1 & 1 & 0\\
-orange & 0 & 1 & 2\\
-tangerine & 0 & 0 & 1\\
-\end{tabular}
-\end{center}
-
-If there is a large block of quoted text, use:
-
-\begin{quote}
-    \textit{Note that this text is in italics!}
-\end{quote}
-
-When linking out to articles using \verb|\href|, try to use the DOI instead of a link to the publisher site or PubMed page.
+The presence of image compression artifacts is, by itself, not an indication of image manipulation. If you are unsure if an image feature is due to image compression, try to see if there are other compression artifacts present in the image. To investigate potential image duplications, it is always preferable to assess the original, uncompressed image files.
 
 \end{document}
