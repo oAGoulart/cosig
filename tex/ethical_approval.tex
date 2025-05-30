@@ -1,0 +1,184 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ bottom=20mm
+ }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hyperindex,breaklinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue
+    }
+% \usepackage{background} % add COSIG logo to page
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+
+\titlespacing*{\section}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+ 
+\begin{document}
+\flushleft
+\includegraphics[width=0.5\textwidth]{img/home/241017_final_logo_mockup.png}
+
+\section*{Ethical approval of human subjects research}
+\addcontentsline{toc}{section}{Ethical approval of human subjects research}
+\textit{Last updated: 30 May 2025}
+
+Research involving human participants must follow strict regulatory rules to minimize harm to participants' mental or physical well-being. Most countries require medical research to comply with the \href{https://www.wma.net/policies-post/wma-declaration-of-helsinki/}{Declaration of Helsinki}, established in 1964 by the World Medical Association.
+
+\subsection*{Institutional Review Board (IRB)}
+
+Most universities and large research institutions will have an \href{https://en.wikipedia.org/wiki/Institutional_review_board#Exceptions}{Institutional Review Board (IRB)}, sometimes called an Independent Ethics Committee (IEC), Ethical Review Board (ERB) or Research Ethics Committee (REC). IRBs are committees that ensure that research conducted at the institution meets specific ethical standards, uses sound methodology and complies with governmental regulations. Sometimes, IRBs are not affiliated with universities but are organized centrally for a specific region or country. Institutions and companies that do not have their own IRB often make use of independent commercial IRBs.
+
+\subsection*{IRB approval}
+
+Human subjects research must undergo ethical approval by an IRB before it is conducted (i.e., before the start of the study and before any participants are recruited). Retrospective ethical approvals of studies that have already began are not considered valid. The United States National Institutes of Health (NIH) host \href{https://grants.nih.gov/policy-and-compliance/policy-topics/human-subjects/hs-decision}{a decision tool} to determine if a study would qualify as human subjects research.
+
+Certain types of studies will nearly always require IRB approval, such as:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Clinical trials testing new drugs or devices
+    \item Collection of human tissues, blood, urine, or feces for research
+    \item Behavioral studies, such as cognitive psychology experiments
+    \item Questionnaires that might involve some participant discomfort (e.g., about suicide, bullying, sexual orientation, gender identity, etc.)
+\end{itemize}
+
+Certain types of studies do not qualify as human subjects research or are otherwise exempt from IRB approval. Examples of studies that are often exempt from IRB approval include:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Research on stored human tissues or blood samples collected as part of regular clinical care (provided that the subjects that provided the samples cannot be identified by the investigators)
+    \item \href{https://en.wikipedia.org/wiki/Citizen_science}{Citizen science} projects
+    \item Observations of public behavior without interaction and without collecting identifying information
+\end{itemize}
+
+It is always best to consult with an IRB to determine if a study is indeed exempt from IRB approval requirements.
+
+\subsection*{Informed consent}
+
+Obtaining informed consent from participants in a study involved providing potential participants with clear and understandable information about the research, including both its potential benefits and risks, so that they may make an informed decision about whether to participate or not. This process is elaborated upon in Sections 25 to 32 of \href{https://www.wma.net/policies-post/wma-declaration-of-helsinki/}{the Declaration of Helsinki}. A potential participants (or their legally-authorized representative) must read, understand and sign informed consent paperwork in order to enroll in a study. It is often mandatory to store this paperwork for a predetermined number of years.
+
+\subsection*{Multi-institutional and international studies}
+
+For multi-site studies, IRB approval can usually be obtained at a single institution, with other participating sites participating via an IRB Authorization Agreement rather than each conducting a separate full review. 
+
+For studies involving participants in multiple countries, approval must be obtained from IRBs in all countries where the study is conducted (i.e., researchers from Country A who have obtained IRB approval from their institution cannot recruit participants in Country B without obtaining authorization from an IRB local to Country B). This may require a research proposal to comply with regulations that only apply in particular countries.
+
+\subsection*{Vulnerable populations and coercion}
+
+Studies involving certain groups of human participants may require additional scrutiny before approval. Such groups are often called ``vulnerable populations'' and might include children, military veterans, the elderly, the homeless, the incarcerated, gender and ethnic minorities, people who are pregnant and people with diminished comprehension. Participants with low literacy skills or those that do not speak the language in which forms are written should receive appropriate assistance to sign the required informed consent paperwork and participate in the study.
+
+Coercion in human-subjects research occurs when individuals feel compelled to participate in a study due to fear of harm or fear of losing benefits to which they are otherwise entitled. Some examples where potential participants would feel coerced include:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item A student invited to participate in a survey conducted by their professor might fear their professor will fail them if they do not participate.
+    \item A person invited to take part in a study by their health insurance provider might worry that they will lose coverage if they do not participate.
+    \item A homeless person checking into a shelter might feel forced to participate in a clinical study out of fear that they will not receive a meal and a bed that night if they do not participate.
+\end{itemize}
+
+IRBs pay special attention to mitigating the possibility of coercion to ensure that consent is informed and free. Measures against coercion include upfront statements that participation in a study is voluntary and that declining to participate will not result in penalties.
+
+\subsection*{Checking ethical approval information in published articles}
+
+Most articles involving human subjects research will feature wording about IRB approval (e.g., ``this study was approved by the Institutional Review Board of [Institution] under study number [Document Number]''). Studies that are exempt from IRB approval will often mention this as well (e.g., ``this study was deemed to not constitute human subjects research by the Insitutional Review Board of [Institution]''). Most studies with human participants will also include a statement on informed consent (e.g., ``all patients provided written informed consent at the time of enrollment''). 
+
+For studies of vulnerable populations or studies where there is high possibility of coercion, additional wording is expected in the reporting article regarding how the participants or their legally-authorized representative were ethically invited and informed.
+
+Studies with participants from multiple countries should share information on ethical approval from all relevant local authorities in the reporting article.
+
+\href{https://en.wikipedia.org/wiki/Case_report}{Case reports} usually do not require IRB approval but do require permission from the featured patient(s) before being submitted for publication. The reporting article should feature a statement affirming this (e.g., ``the participant has consented to the submission of this case report for publication'').
+
+Publishers will usually have at least one page describing their reporting requirements for human subjects research, as in the examples below. Consult these requirements to determine whether an article meets a publisher's guidelines.
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Frontiers: \href{https://www.frontiersin.org/files/pdf/Research%20ethics_guidelines%20for%20editors%20and%20reviewers.pdf}{Research ethics guidelines for editors and reviewers}
+    \item SAGE (Sage, Mary-Ann Liebert): \href{https://uk.sagepub.com/sites/default/files/editor_guidelines.pdf}{Editor guidelines for ethical approval and informed consent statements}
+    \item Springer Nature (Springer, Nature, BMC): \href{https://www.springer.com/gp/editorial-policies/informed-consent?srsltid=AfmBOoryhgl-fRz6G7UtywN7SY2D62DcbOkNGsW8LHI4PtwA75TfNNFD}{Editorial policies on informed consent}
+\end{itemize}
+
+\subsection*{Common issues with ethical approval reporting}
+
+Because ethical approval reporting in articles is usually quite limited, it is often not possible to scrutinize an article's ethical approval deeply. Many issues with ethical approval or unethical conduct of human subjects research are only discovered after allegations are raised by someone involved with the research. However, there are some signatures of problematic ethical approval processes that do appear in the published article. If you have concerns, consider asking the authors to produce their ethical approval documentation, which will provide more information.
+
+\subsubsection*{Lack of ethical approval reporting}
+
+Articles reporting on human subjects research should always report information on ethical approval.
+
+\subsubsection*{Re-use of an ethical approval number}
+
+Sometimes, an article references an ethical approval number that is also used in other completely unrelated articles. Consider searching for an article's reported ethical approval number in the full text of other articles using a service like \href{https://scholar.google.com}{Google Scholar} or \href{https://www.dimensions.ai/}{Dimensions}.
+
+\subsubsection*{Ethical approval from a non-existent or unlikely source}
+
+An article may report that the authors obtained ethical approval from an institution that does not exist (or appears to have little to do with the research).
+
+Similarly, articles reporting ethical approval from the IRB at a small company may be problematic--usually, only large pharmaceutical company have in-house IRBs.
+
+\subsubsection*{Inconsistent ethical approval number formatting}
+
+An article may report an ethical approval number with a layout that is inconsistent with other ethical approval number reported from that institution. Consider inspecting other articles from the same institution to see if their ethical approval number is reported with a similar format.
+
+\subsubsection*{Inconsistent timelines}
+
+Often, ethical approval numbers feature a combination of digits that represents the year or date the ethical approval was granted (e.g. "2022-XX-1234"). The year or date implied by the ethical approval number may be after a study's enrollment period began, indicating that the authors did not have prior ethical approval before they began their research.
+
+\subsection*{Example 1: Re-used ethical approval number, lack of local approval, lack of informed consent}
+
+\href{https://doi.org/10.1186/s41073-023-00134-4}{Frank et al. (2023)} describe 248 articles reporting on studies conducted under the auspices of the \href{https://www.mediterranee-infection.com/}{Institut Hospitalo Universitaire Méditerranée Infection (IHU-MI)}, all of which report the same ethical approval number despite enrolling different classes of participants, involving different protocols, and being conducted in different countries. \href{https://ihu-correction.com/}{Numerous additional articles} from the institute feature retrospective ethical approvals, unrealistically fast turnaround on peer reviews, lack of local ethical approvals or lack of ethical approval reporting altogether and collection of samples from participants in homeless shelters (considered a vulnerable population with a high risk of coercion). More than 50 of these articles have been retracted and more than 100 have been marked with expressions of concern.
+
+\subsubsection*{Additional reading}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://www.science.org/content/article/unearthed-university-investigation-found-research-ethics-failings-french-medical}{``Unearthed university investigation found research ethics failings at French medical institute'' (2024)}
+    \item \href{https://www.science.org/content/article/failure-every-level-how-science-sleuths-exposed-massive-ethics-violations-famed-french}{```Failure at every level': How science sleuths exposed massive ethics violations at a famed French institute'' (2024)}
+    \item \href{https://retractionwatch.com/2024/04/03/embattled-researcher-didier-raoult-earns-dozens-more-expressions-of-concern-and-another-retraction/}{``Embattled researcher Didier Raoult earns more than 100 expressions of concern and another retraction'' (2024)}
+\end{itemize}
+
+\subsection*{Example 2: Ethical approval number indicates retrospective approval}
+
+\href{https://doi.org/10.3390/medicines9070038}{Zulfiqar et al. (2022)} report on conducting frailty assessments in a prospective study of elderly adults. The authors state that the ``research protocol was reviewed and approved by the National Commission of Information and Freedom and by the Internal Department Ethics Committee (No. 20-06-19)''. However, this approval number implies that the approval was granted in 2020 (if not on 19 Jun 2020), whereas enrollment began on 2 May 2019. The article was \href{https://doi.org/10.3390/medicines11080022}{retracted in 2024} with a notice stating ``the Editorial Board concluded that this study does not adhere to the national regulations governing research involving human participants''. \href{https://doi.org/10.3390/medicines9110058}{Another study} by some of the same authors reports an ethical approval number (``2022-A01817-36'') that also implies that ethical approval was obtained after enrollment began (17 May 2021).
+
+\subsection*{Example 3: Concerns about coercion}
+
+\href{https://doi.org/10.1038/s41598-018-22975-6}{Zhan et al. (2018)} report on collecting blood samples for genetic analysis. In 2024, this article \href{https://doi.org/10.1038/s41598-024-64860-5}{was retracted} with a notice stating ``information provided by the Authors has indicated that a police officer may have been present as part of the team collecting blood samples and the Editors have concerns that this may have compromised the freedom of participants to give their consent to participate voluntarily''.
+
+% https://pubpeer.com/publications/58C1AB0292C497A43A16C1D6E5F4FD
+% https://www.nature.com/articles/s41598-024-64860-5
+% https://www.mdpi.com/2305-6320/11/8/22
+% https://onlinelibrary.wiley.com/doi/10.1002/leap.2009
+
+
+\end{document}
