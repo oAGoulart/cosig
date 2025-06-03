@@ -64,7 +64,7 @@
 
 \section*{Citations}
 \addcontentsline{toc}{section}{Citations}
-\textit{Last updated: 22 May 2025}
+\textit{Last updated: 3 June 2025}
 
 Science is built incrementally, one discovery at a time.
 Scientific articles \emph{cite} other articles to make reference to previous work and claims.
@@ -126,7 +126,7 @@ More than a handful of citations to the same author in a paper is unusual. This 
 
 Consistently citing the authors' own papers is problematic. Most citation metrics explicitly exclude self-citations.
 
-(\href{https://pubpeer.com/publications/3EAC0C5735F8D48FF1D4B06C6BFC30}{example})
+(\href{https://pubpeer.com/publications/3EAC0C5735F8D48FF1D4B06C6BFC30}{example 1}, \href{https://pubpeer.com/publications/05FEFB3CB21AB7AE04EA800AAB28BF}{example 2})
 
 \subsubsection*{Unused citations}
 
@@ -175,8 +175,8 @@ Some ``plagiarism avoidance'' software will paraphrase text in a way that result
 
 LLM tools like ChatGPT often cite non-existent articles.
 
-(\href{https://pubpeer.com/publications/8D6BF963665181144EC553BE2FDA92\#2}{example 1},
-\href{https://web.archive.org/web/20230623093222/https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt}{example 2}, from outside of academic publishing)
+(\href{https://pubpeer.com/publications/8D6BF963665181144EC553BE2FDA92\#2}{example 1}, \href{https://pubpeer.com/publications/7F01171F32B0421DF37EE8D1B49C04#4}{example 2},
+\href{https://web.archive.org/web/20230623093222/https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt}{example 3}, from outside of academic publishing)
 
 \subsubsection*{Outdated citations}
 
@@ -192,7 +192,7 @@ A cited article can be a problematic or unreliable source of information for a v
 
 Citations to articles published in hijacked journals are problematic. Hijacked journals often publish low-quality, non–peer-reviewed articles and are frequently associated with  misconduct (see the section on hijacked journals in COSIG's guide on \href{https://osf.io/vrk7e}{suspicious publication venues}). Hijacked journals will often publish content that is wildly outside of the journal's stated scope since they tend to publish anything in exchange for a fee.
 
-The \href{https://dbrech.irit.fr/pls/apex/f?p=9999:27::::::}{Problematic Paper Screener's Citejacked detector} tracks articles that make citations to a selection of journals that have been hijacked.
+The \href{https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener/citejacked}{Problematic Paper Screener's Citejacked detector} tracks articles that make citations to a selection of journals that have been hijacked.
 
 \subsection*{Common false alarms}
 
@@ -210,6 +210,18 @@ Reviewers are typically experts in their subfield. It is innocuous for reviewers
 
 Various software glitches can result in a bibliography not being updated along with the paper text.
 If one or two references appear only in the bibliography, but no other red flag applies, there is usually no cause for concern, although it may merit a correction.
+
+\subsubsection*{Errors in bibliographic entries}
+
+Some bibliography entries can appear as errors. 
+\begin{itemize}
+
+    \item ``!!! INVALID CITATION !!!'' is most likely to be an Endnote-related error (\href{https://pubpeer.com/publications/87320DD76ED35F5F3023F890C15023}{example}).  
+    \item ``Error! Reference source not found.'' is most likely an error related to Microsoft Word. (\href{https://pubpeer.com/publications/1BE25CD291387136DA3474C7D97287}{example})
+    \item ``Error! Hyperlink reference not valid'' is another similar error. (\href{https://pubpeer.com/publications/88516C0A7BFF973A515FD3EA842022}{example}) 
+\end{itemize}
+These should not have survived the proofreading by the (co)authors, editors, referees, copy editors, 
+typesetters and merit a correction.
 
 \subsubsection*{Mistaken author names}
 
