@@ -22,7 +22,7 @@ Suggestions to improve COSIG can be submitted by opening an issue on [COSIG's Gi
 * [Image compression artifacts](https://osf.io/e5vzr)
 * [Software for image forensics](https://osf.io/g23pf)
 * [Reporting publication integrity issues to publishers](https://osf.io/4edk2)
-* [Citations](https://osf.io/zpf4r)
+* [Citations](https://osf.io/5vknq)
 * [Citations to retracted publications](https://osf.io/9q3as)
 * [Formulaic research](https://osf.io/24dhu)
 * [Plagiarism of text](https://osf.io/ntcb4)
