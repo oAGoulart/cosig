@@ -51,7 +51,7 @@
 
 \section*{Image compression artifacts}
 \addcontentsline{toc}{section}{Image compression artifacts}
-\textit{Last updated: 26 May 2025}
+\textit{Last updated: 4 June 2025}
 
 Image files are often \href{https://en.wikipedia.org/wiki/Data_compression}{compressed} to take up less disk space. Lossy compression algorithms like \href{https://en.wikipedia.org/wiki/JPEG}{JPEG} often leave visual artifacts in the compressed image, including:
 
@@ -68,6 +68,16 @@ Image files are often \href{https://en.wikipedia.org/wiki/Data_compression}{comp
     \caption*{The same figure (original on left) subjected to moderate JPEG compression (middle, Q=10) and heavy JPEG compression (right, Q=0). Various compression artifacts are highlighted with red boxes below the figure.}
 \end{figure}
 
-The presence of image compression artifacts is, by itself, not an indication of image manipulation. If you are unsure if an image feature is due to image compression, try to see if there are other compression artifacts present in the image. To investigate potential image duplications, it is always preferable to assess the original, uncompressed image files.
+The presence of image compression artifacts is, by itself, not an indication of image manipulation. On the other hand, sometimes duplications can be obscured by compression artifacts. If the image quality is low in a suspected duplication or one of the two images is more affected by lossy compression, the two images may no longer be pixel-identical. Images that are not pixel-identical can still be considered duplications if they appear too similar to genuinely depict different subjects.
+
+If you are unsure if an image feature is due to image compression, try to see if there are other compression artifacts present in the image. To investigate potential image duplications, it is always preferable to assess the original, uncompressed image files.
+
+\subsection*{Additional resources}
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://osf.io/547re}{COSIG: Image duplication}
+    \item \href{https://doi.org/10.1007/s11263-022-01617-5}{``Learning JPEG Compression Artifacts for Image Manipulation Detection and Localization'' (2022)}
+\end{itemize}
 
 \end{document}

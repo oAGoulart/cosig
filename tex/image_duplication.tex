@@ -51,7 +51,7 @@
 
 \section*{Image duplication}
 \addcontentsline{toc}{section}{Image duplication}
-\textit{Last updated: 28 May 2025}
+\textit{Last updated: 4 June 2025}
 
 Image duplication is one of the most frequently spotted integrity issues in scientific publications. This term is generally used to describe instances where two images (or parts of an image) are supposed to represent different things but are actually identical.
 
@@ -90,6 +90,8 @@ The different channels in \href{https://en.wikipedia.org/wiki/Fluorescence_micro
 
 For histological analyses, a tissue is sectioned into slices that are often only a few microns thick. Adjacent sections might be stained differently to visualize different structures in the same tissue. Images of adjacent tissue slices will likely appear similar, though not exactly identical. This is only problematic if these images are supposed to represent different subjects or samples.
 
+Image compression artifacts can sometimes give the impression that an image contains duplications or splices (see COSIG's \href{https://osf.io/e5vzr}{entry on the subject}). On the other hand, image compression can also obscure true image duplications by making the duplicated regions no longer identical on a pixel-by-pixel level.
+
 \subsection*{Annotating image duplications}
 
 When reporting observations of image duplications on PubPeer or to journal editors, it is often useful to illustrate exactly which images / regions are apparently duplicated. This is often accomplished by overlaying colored boxes on the image (as shown in the examples below) where each color corresponds to a different set of shared image features. These annotations are usually performed in software like \href{https://www.microsoft.com/en-us/windows/paint}{Microsoft Paint}, \href{https://www.gimp.org/}{GIMP}, \href{https://www.microsoft.com/en-us/microsoft-365/powerpoint}{Microsoft PowerPoint} or \href{https://support.apple.com/guide/preview/welcome/mac}{Preview (for Mac)}. 
@@ -110,6 +112,8 @@ A PowerPoint template containing several pre-made boxes and symbols for annotati
     \includegraphics[width=\textwidth]{img/image_duplication/Bakhsheshi-Rad_annotation.jpg}
     \caption*{An original set of published images of cell culture (left) versus an annotated version of these images showing regions of unusually high similarity (right). Adapted from Figure 4C of \href{https://doi.org/10.1016/j.polymertesting.2019.106298}{Bakhsheshi-Rad et al. (2020)} by \href{https://pubpeer.com/publications/60A225978670EFD93446CAC5696F7F\#1}{Reese Richardson on PubPeer}. This represents a Type III duplication. Note also that some of the boxed regions (e.g., the cyan boxes) are unusually similar, but not exactly identical to one another.}
 \end{figure}
+
+\pagebreak
 
 \subsection*{Example 1: Type I duplication}
 
@@ -199,6 +203,7 @@ Morrison et al. also provide histopathological images of implanted tumors. One p
     \item \href{https://scienceintegritydigest.com/2020/01/08/types-of-image-duplications/}{``Types of image duplications: the palm trees'' (2020)}
     \item \href{https://doi.org/10.1017/jme.2025.32}{``Misconduct Detection — Evolving Methods \& Lessons from 15 Years of Scientific Image Sleuthing'' (2025)}
     \item \href{https://osf.io/g23pf}{COSIG: Software for image forensics}
+    \item \href{https://osf.io/e5vzr}{COSIG: Image compression artifacts}
 \end{itemize}
 
 \end{document}
