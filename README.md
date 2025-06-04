@@ -58,6 +58,8 @@ Except where otherwise indicated, all material in COSIG is available under a [CC
 
 ![CC BY-NC-SA 4.0 shield](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
 
+### Citing COSIG itself
+
 #### APA style citation
 
 ```  
@@ -83,5 +85,34 @@ Except where otherwise indicated, all material in COSIG is available under a [CC
   publisher={OSF},
   year={2025},
   month={June}
+}
+```
+
+### Citing a commentary explaining the motivation behind COSIG
+
+#### APA style citation
+```
+Richardson, R. (2025). The Collection of Open Science Integrity Guides (COSIG): Expanding participation in post-publication peer review. Zenodo. https://doi.org/10.5281/zenodo.15564777
+```
+
+#### MLA style citation
+```
+Richardson, R. The Collection of Open Science Integrity Guides (COSIG): Expanding Participation in Post-publication Peer Review. Zenodo, 4 June 2025, doi:10.5281/zenodo.15564777.
+```
+
+#### Chicago style citation
+```
+Richardson, Reese. “The Collection of Open Science Integrity Guides (COSIG): Expanding Participation in Post-publication Peer Review”. Zenodo, June 4, 2025. https://doi.org/10.5281/zenodo.15564777.
+```
+#### BibTex entry
+```
+@article{cosig_commentary,
+  author={Richardson, Reese},
+  title={The Collection of Open Science Integrity Guides (COSIG): Expanding participation in post-publication peer review},
+  month={June},
+  year={2025},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.15564777},
+  url={https://doi.org/10.5281/zenodo.15564777}
 }
 ```
